@@ -26,13 +26,13 @@ Recent years have shown a rise in chatbots on the internet. Reason for this are 
     docker run -p8001:8000 rasa/duckling
 ```
 
-1. Inside /rasa start Action Server (only for openSAP)
+2. Inside /rasa start Action Server (only for openSAP)
 
 ```sh
     docker run -p8001:8000 rasa/duckling
 ```
 
-1. Inside /rasa start rasa
+3. Inside /rasa start rasa
 
 ```sh
     rasa run -vv -m models/openWHO --enable-api --log-file out.log --endpoints endpoints.yml --credentials credentials.yml
