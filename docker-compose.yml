@@ -1,0 +1,14 @@
+version: '3.3'
+networks: {rasa-network: {}}
+services:
+  rasa:
+    image: 'your_image'
+    ports:
+      - 5005:5005
+    command: ["run", "-vv", "--endpoints", "endpoints.yml"]
+    networks: ['rasa-network']
+  duckling_server:
+    image: rasa/duckling:latest
+    ports:
+      - 8000:8000
+    networks: ['rasa-network']
