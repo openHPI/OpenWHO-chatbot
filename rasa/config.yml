@@ -8,9 +8,11 @@ pipeline:
     max_featurizes: 10000
     max_ngram: 15
     min_ngram: 2
-  - name: CRFEntityExtractor
+  - name: DIETClassifier
+    epochs: 200
   - name: EntitySynonymMapper
-  - name: EmbeddingIntentClassifier
+  - name: DIETClassifier
+    epochs: 200
     intent_tokenization_flag: true
     intent_split_symbol: "+"
   - name: DucklingHTTPExtractor
@@ -23,7 +25,7 @@ pipeline:
   - name: SpacyEntityExtractor
     dimensions: ["PERSON", "LOC", "ORG", "PRODUCT"]
 policies:
-  - name: KerasPolicy
+  - name: TEDPolicy
     batch_size: 50
     epochs: 200
     max_training_samples: 300

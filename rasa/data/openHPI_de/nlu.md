@@ -275,7 +275,7 @@
 - Ich kann die Registrierung nicht abschließen. 
 - Ich brauche Hilfe bei der Registrierung. 
 
-## include:reset_password_question
+## intent:reset_password_question
 - Wie kann ich mein Passwort zurücksetzen? 
 - Ich habe mein Passwort vergessen.
 - Ich habe mein Passwort verloren.
@@ -292,7 +292,7 @@
 - Ich kaann mich nicht mehr einloggen, weil ich mein Passwort vergessen habe. 
 - Ich habe mein Passwort vergessen und möchte es daher zurücksetzen. 
 
-## include:extend_deadlines_question
+## intent:extend_deadlines_question
 - Ich kann nicht am ganzen Kurs teilnehmen, weil ich verhindert bin. Kann ich trotzdem das Zeugnis erwerben?
 - Ich bin im Urlaub und kann nicht am Kurs weitermachen. Kann ich trotzdem ein Zeugnis erwerben?
 - Ich kann meine Hausaufgaben nicht rechtzeitig abgeben.
@@ -307,7 +307,7 @@
 - Kann ich an der Prüfung später teilnehmen? 
 - Kann ich etwas später an meinem Test teilnehmen? 
 
-## include:relaxed_learning_question
+## intent:relaxed_learning_question
 - Darf ich am Kurs teilnehmen ohne ein Zeugnis zu erwerben? 
 - Ich möchte kein Zeugnis erwerben, ist das ok? 
 - Muss ich an den Tests und Prüfungen teilnehmen?
@@ -323,7 +323,7 @@
 - Ist es schlimm keine Hausaufgaben zu machen? 
 - Ist es schlimm nicht an der Prüfung teilzunehmen? 
 
-## include:material_usage_question
+## intent:material_usage_question
 - Ich möchte gerne openHPI-Kursmaterialien für den Unterricht bzw. zur internen Weiterbildung in meinem Unternehmen nutzen. Darf ich das?
 - Darf ich die Kursmaterialien weiterverwenden?
 - Sind die Kursmaterialien lizensiert?
