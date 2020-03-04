@@ -322,7 +322,7 @@
 - I need help with the activation of my account. 
 - I do not get the activation email. 
 
-## include:reset_password_question
+## intent:reset_password_question
 - How can I reset my password? 
 - I forgot my password. 
 - I lost my password.
@@ -336,7 +336,7 @@
 - I have trouble logging in. 
 - My password does not work anymore. 
 
-## include:extend_deadlines_question
+## intent:extend_deadlines_question
 - I can not make my courses deadlines, can they be extended? 
 - I can't participate in the whole course because I'm on vacation. Can I still earn a record of achievement?
 - I can not do my homework in time. 
@@ -361,7 +361,7 @@
 - Can I just use the materials to learn on my own without tests or homeworks? 
 - Is it ok to not participate in the tests? 
 
-## include:material_usage_question
+## intent:material_usage_question
 - I would like to use the learning material provided by openHPI for teaching purposes. Am I allowed to do so?
 - Can I use the course material for teaching purposes?
 - Is the course material licensed? 
