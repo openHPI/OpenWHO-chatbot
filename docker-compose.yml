@@ -6,7 +6,7 @@ services:
     ports:
       - "5005:5005"
     volumes:
-      - ./rasa/models/openHPI_de:/app/models/
+      - ./rasa/models/openHPI_de:/app/models/openHPI_de/
     command: ["run", "-vv", "--enable-api", "--endpoints", "endpoints.yml", "--credentials", "credentials.yml"]
     networks: ['rasa-network']
     depends_on:
