@@ -2,12 +2,10 @@ version: '3.3'
 networks: {rasa-network: {}}
 services:
   rasa:
-    image: rasa/rasa:latest-full
+    image: openHPI:1.0
     ports:
       - "5005:5005"
-    volumes:
-      - ./rasa/:/app/
-    command: ["run", "-vv", "-m", "models/openHPI_de/", "--enable-api", "--endpoints", "endpoints.yml", "--credentials", "credentials.yml"]
+    command:  run -vv -m /app/models/openHPI_de/ --enable-api --endpoints /app/endpoints.yml --credentials /app/credentials.yml
     networks: ['rasa-network']
     depends_on:
       - duckling
