@@ -16,14 +16,14 @@ pipeline:
     timezone: Europe/Berlin
     url: http://duckling:8000
   - name: DIETClassifier
-    epochs: 200
+    epochs: 20
     intent_tokenization_flag: true
     intent_split_symbol: "+"
   - name: EntitySynonymMapper
 policies:
   - name: TEDPolicy
     batch_size: 50
-    epochs: 200
+    epochs: 20
     max_training_samples: 300
     max_history: 5
   - name: FallbackPolicy
