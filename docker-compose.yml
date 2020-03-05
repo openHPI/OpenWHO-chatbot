@@ -2,7 +2,7 @@ version: '3.3'
 networks: {rasa-network: {}}
 services:
   rasa:
-    image: openHPI:1.0
+    image: openhpi:1.0
     ports:
       - "5005:5005"
     command:  run -vv -m /app/models/openHPI_de/ --enable-api --endpoints /app/endpoints.yml --credentials /app/credentials.yml
