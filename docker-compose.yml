@@ -4,7 +4,7 @@ services:
   rasa:
     image: openhpi:1.0
     ports:
-      - "5005:5005"
+      - "5005:12345"
     command:  run -vv -m /app/models/openHPI_de/ --enable-api --endpoints /app/endpoints.yml --credentials /app/credentials.yml
     networks: ['rasa-network']
     depends_on:
@@ -12,5 +12,5 @@ services:
   duckling:
     image: rasa/duckling:latest
     ports:
-      - "8000:12345"
+      - "8000:8000"
     networks: ['rasa-network']
