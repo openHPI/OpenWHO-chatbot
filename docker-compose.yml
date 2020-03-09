@@ -4,7 +4,7 @@ services:
   rasa:
     image: openhpi:1.0
     ports:
-      - "5005:12345"
+      - "12345:5005"
     command:  run -vv -m /app/models/openHPI_de/ --enable-api --endpoints /app/endpoints.yml --credentials /app/credentials.yml
     networks: ['rasa-network']
     depends_on:
