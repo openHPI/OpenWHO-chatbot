@@ -12,5 +12,5 @@ services:
   duckling:
     image: rasa/duckling:latest
     ports:
-      - "8000:8000"
+      - "8000:12345"
     networks: ['rasa-network']
