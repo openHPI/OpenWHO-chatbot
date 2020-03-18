@@ -2,10 +2,10 @@ version: '3.3'
 networks: {rasa-network: {}}
 services:
   rasa:
-    image: openhpi:1.0
+    image: openwho_test:1.0
     ports:
       - "12345:5005"
-    command:  run -vv -m /app/models/openHPI_de/ --enable-api --endpoints /app/endpoints.yml --credentials /app/credentials.yml
+    command:  run -vv -m /app/models/openWHO/ --enable-api --endpoints /app/endpoints.yml --credentials /app/credentials.yml
     networks: ['rasa-network']
     depends_on:
       - duckling

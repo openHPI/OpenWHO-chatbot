@@ -1,63 +1,38 @@
 ## intent:payment_question
-- do I have to pay for openwho courses? 
-- how much does openwho cost
-- what is the price of openwho
-- do the courses cost money?
-- is openwho free? 
-
-## intent:timelimit_question
-- do these courses have any time limit? 
-- how long can I do the courses? 
-- when should I finish my courses
-- do the courses end sometime? 
-
-## intent:confirmation_of_participation_question
-- do all courses offer confirmation of participation? 
-- do I get a participation certificate? 
-- can I get a certificate of participation
-- please give me a confirmation of participation
-- I need a certificate
-- I want a confirmation
-- Does OpenWHO offer certificates? 
+- Do I have to pay for openwho courses? 
+- How much does openwho cost
+- What is the price of openwho
+- Do the courses cost money?
+- Is openwho free?
+- I don't want to pay money for the courses
 
 ## intent:account_creation_question
-- how do I create a profile? 
-- how do I create an account
-- where do I register 
+- How do I create a profile? 
+- How do I create an account?
+- Where do I register?
 - I need a new account
-- how can I start using openwho?
+- How can I start using openwho?
 
 ## intent:confirmation_email_problem
-- what to do in case I did not receive a confirmation email? 
+- What to do in case I did not receive a confirmation email? 
 - I did not recieve the confirmation email
 - I did not get the confirmation email
 - I do not find the confirmation mail 
 - I can not see the email for confirmation
-- where do I find the confirmation mail?
-
-## intent:course_enrollment_question
-- how do I enroll in a course?
-- how to join a course
-- where can I join a course?
-- how to participate in a course?
-- where to enroll in a course
+- Where do I find the confirmation mail?
 
 ## intent:mobile_device_question
-- will the platform work on mobile devices?
-- can I use openwho on my phone
-- can I use openwho on android
-- can I use openwho on IOS?
-- is there an openwho app? 
-- how to use openwho on my mobile
+- Will the platform work on mobile devices?
+- Can I use openwho on my phone
+- Can I use openwho on android
+- Can I use openwho on IOS?
+- Is there an openwho app? 
+- How to use openwho on my mobile
 - Does OpenWHO offer a mobile App? 
 - Do you have a mobile App? 
 - Do you offer an App? 
 - Can I use OpenWHO on my phone? 
 
-## intent:confirmation_of_participation_download_question
-- how can I download a confirmation of participation?
-- where do I get a certificate of participation
-- where can I download a confirmation of participation? 
 
 ## intent:password_reset_question
 - I forgot my password, what can I do? 
@@ -65,21 +40,14 @@
 - I forgot my password
 - How can I retrieve my password
 - I need to reset my password
-- where can I reset my password
-- where can I retrieve my password
-
-## intent:technical_difficulties_question
-- I am experiencing technical difficulties, what can I do? 
-- I have technical problems
-- where can I get help with a technical problem? 
-- I have technical difficulties
-- I need help with a technical problem
+- Where can I reset my password
+- Where can I retrieve my password
 
 ## intent:who_credentials_usage_question
-- can I use my who credentials to log in the platform? 
-- can I use my who account for openwho? 
-- do I need a new account for openwho or can I use my who account? 
-- can I use my who credentials
+- Can I use my who credentials to log in the platform? 
+- Can I use my who account for openwho? 
+- Do I need a new account for openwho or can I use my who account? 
+- Can I use my who credentials
 
 ## intent:whats_openwho_question
 - What is OpenWHO?
@@ -88,10 +56,6 @@
 - What is this website? 
 - What can I do here? 
 - What is the purpose of OpenWHO? 
-
-## intent:why_openwho_question
-- Why OpenWHO? 
-- Why was OpenWHO created? 
 
 ## intent:openwho_access_question
 - Who can access OpenWHO courses?
@@ -119,22 +83,10 @@
 - How does a course work? 
 - What can I expect from a course? 
 
-## intent:past_outbreak_question
-- What has OpenWHO done during the past outbreaks? 
-- Which outbreaks did OpenWHO support? 
-- Did OpenWHO help with past outbreaks? 
-
 ## intent:ongoing_outbreak_question
 - How does OpenWHO support ongoing outbreaks?
 - What does OpenWHO do for current outbrekas?
 - How does OpenWHO help with outbreaks? 
-
-## intent:keynumbers_question
-- What are the key numbers?
-- Please give me the key numbers.
-- Do you have key numbers for OpenWHO? 
-- How many users does OpenWHO have? 
-- Where do the OpenWHO users come from? 
 
 ## intent:offered_languages_question
 - What languages does OpenWHO offer? 
@@ -142,3 +94,88 @@
 - What languages are used? 
 - What languages do you offer? 
 - In what languages are the courses translated? 
+
+## intent:course_enrollment_question
+- I cannot enter the course [COVID-19](course_name)
+- I want to enroll for the course [COVID-19](course_name)
+- I want to join the course
+- I want to particiapte in the course
+- How can I start the course [COVID-19](course_name)?
+- How can I enter the course?
+- How can I get to the course?
+- How do I get the course?
+- How can I enroll to the course [COVID-19](course_name)?
+- How do I enroll in a course?
+- How to join a course?
+- Where can I join a course?
+- How to participate in a course?
+- Where to enroll in a course?
+
+## intent:change_email_question
+- How can I change my email?
+- Where can i change my email address?
+- I want to change email
+- I want to use a different email
+- How can I use a different email?
+- Where can I set my email address?
+
+## intent:where_certificate_question
+- Where can I find my certificate for the course [COVID-19](course_name)?
+- How can I download a [confirmation of participation](certificate_type)?
+- How can I download the certificate?
+- Where do I get a [confirmation of participation](certificate_type)?
+- Where can I download a [confirmation of participation](certificate_type)? 
+- Where do I get the certficiate?
+- Do all courses offer [confirmation of participation](certificate_type)? 
+- Do I get a certificate? 
+- Can I get a certificate?
+- Please give me a confirmation
+- I need a certificate
+- I want a confirmation
+
+## intent:outdated_browser_question
+- The video is not playing
+- How can I start the video?
+- My course video is not loading
+- The video is not starting
+- How can I see the course video?
+- Why is the course video not playing?
+
+## intent:birthday_question
+- How can I change my birthday?
+- Where can I set my birthday?
+- Where can I add my birthday?
+- Is my birthday shown on my certficate?
+- I want to change my birthday
+- I cannot set my birthday
+- I cannot find my birthday on the certificate
+
+## intent:transcription_question
+- Are there any transcriptions available?
+- Can I download a transcription for the video?
+- I need a transcription
+- I want a transcription
+- Where can I find the transcription for the video?
+- Where can I download the transcription?
+
+## intent:timelimit_question
+- Do these courses have any time limit? 
+- How long can I do the courses? 
+- When should I finish my courses?
+- Do the courses end sometime?
+- When does the course start?
+- When does the course end?
+- What is the enddate of my course?
+- What is the startdate of my course?
+- How much time do I have to finish this course?
+
+## intent:repeat_graded_assignment_question
+- I want to repeat my graded assignment
+- I failed my graded assignment, what can I do now?
+- How can I redo my assignment?
+- I have less than 80% on my assignment
+- How can I repeat my graded assignment?
+
+<!-- ## intent:where_faq
+- Where can I find the FAQS?
+-  -->
