@@ -59,8 +59,8 @@ actions:
   - utter_repeat_graded_assignment_question
 
 session_config:
-  session_expiration_time: 60  # value in minutes, 0 means infinitely long
-  carry_over_slots_to_new_session: true  # set to false to forget slots between sessions
+  session_expiration_time: 1  # value in minutes, 0 means infinitely long
+  carry_over_slots_to_new_session: false  # set to false to forget slots between sessions
 
 responses:
   utter_conversation_greet:
