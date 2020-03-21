@@ -146,7 +146,7 @@ responses:
     - text: "You can change your e-mail address in your personal openWHO profile. Please log on to openWHO and go to your profile: https://openwho.org/dashboard/profile. Overwrite the existing e-mail and hit the check mark. You will receive an e-mail that must be confirmed before the change will take place. These confirmation emails could end up in the junk/spam folder, unfortunately. So please check your junk/spam folder as well. As soon as you've done that, the display on the page will change. Until then, it will look like nothing has changed."
 
   utter_where_certificate_question:
-    - text: "Many courses do not offer any self-tests or assignments. Therefore, these courses do not offer a certificate. Please check the course details page for the certificate requierements."
+    - text: "Many courses do not offer any self-tests or assignments. Therefore, these courses do not offer a certificate. Please check the course details page for the certificate requirements."
 
   utter_outdated_browser_question:
     - text: "You might be using an outdated browser. This could cause the problems. We also offer an app for mobile use. We also offer an app for mobile use. You can find our Android app here: https://play.google.com/store/apps/details?id=de.xikolo.openwho&hl=en. You can find our iOS-App here: https://apps.apple.com/us/app/openwho/id1183923481"
