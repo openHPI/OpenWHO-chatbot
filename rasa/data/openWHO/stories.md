@@ -1,4 +1,4 @@
-## welcome
+<!-- ## welcome
 * conversation_greet
   - utter_conversation_greet
   - utter_conversation_offer_help
@@ -9,7 +9,7 @@
 
 ## thanks
 * conversation_thank_you
-  - utter_conversation_youre_welcome
+  - utter_conversation_youre_welcome -->
 
 ## payment question answer
 * payment_question

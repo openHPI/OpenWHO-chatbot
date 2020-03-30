@@ -1,9 +1,9 @@
 intents:
-  - conversation_greet
-  - conversation_goodbye
-  - conversation_thank_you
-  - conversation_confirm
-  - conversation_cancel
+  # - conversation_greet
+  # - conversation_goodbye
+  # - conversation_thank_you
+  # - conversation_confirm
+  # - conversation_cancel
   - payment_question
   - account_creation_question
   - confirmation_email_problem
