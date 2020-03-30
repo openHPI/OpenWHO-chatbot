@@ -26,11 +26,11 @@ intents:
   - repeat_graded_assignment_question
 
 actions:
-  - utter_conversation_greet
-  - utter_conversation_goodbye
-  - utter_conversation_offer_help
-  - utter_conversation_youre_welcome
-  - utter_conversation_canceled
+  # - utter_conversation_greet
+  # - utter_conversation_goodbye
+  # - utter_conversation_offer_help
+  # - utter_conversation_youre_welcome
+  # - utter_conversation_canceled
   - utter_payment_question
   - utter_timelimit_question
   - utter_confirmation_of_participation_question
@@ -63,27 +63,27 @@ session_config:
   carry_over_slots_to_new_session: false  # set to false to forget slots between sessions
 
 responses:
-  utter_conversation_greet:
-    - text: "Hello."
-    - text: "Hi!"
-    - text: "Hey!"
+  # utter_conversation_greet:
+  #   - text: "Hello."
+  #   - text: "Hi!"
+  #   - text: "Hey!"
 
-  utter_conversation_goodbye:
-    - text: "Good bye."
-    - text: "Have a nice day."
-    - text: "Bye!"
+  # utter_conversation_goodbye:
+  #   - text: "Good bye."
+  #   - text: "Have a nice day."
+  #   - text: "Bye!"
 
-  utter_conversation_offer_help:
-    - text: "How can I help you?"
-    - text: "What can I do for you?"
+  # utter_conversation_offer_help:
+  #   - text: "How can I help you?"
+  #   - text: "What can I do for you?"
 
-  utter_conversation_youre_welcome:
-    - text: "You're welcome."
-    - text: "It's always nice to be of help."
+  # utter_conversation_youre_welcome:
+  #   - text: "You're welcome."
+  #   - text: "It's always nice to be of help."
 
-  utter_conversation_canceled:
-    - text: "Okay, I will not do that."
-    - text: "Alright, I won't."
+  # utter_conversation_canceled:
+  #   - text: "Okay, I will not do that."
+  #   - text: "Alright, I won't."
     
   utter_payment_question:
     - text: "No, all OpenWHO courses are free and open to anyone wishing to register."
