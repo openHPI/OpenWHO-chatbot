@@ -1,16 +1,3 @@
-<!-- ## welcome
-* conversation_greet
-  - utter_conversation_greet
-  - utter_conversation_offer_help
-
-## goodbye
-* conversation_goodbye
-  - utter_conversation_goodbye
-
-## thanks
-* conversation_thank_you
-  - utter_conversation_youre_welcome -->
-
 ## payment question answer
 * payment_question
     - utter_payment_question
@@ -67,10 +54,6 @@
 * course_enrollment_question
     - utter_course_enrollment_question
 
-## change email question answer
-* change_email_question
-    - utter_change_email_question
-
 ## where is my certificate question answer
 * where_certificate_question
     - utter_where_certificate_question
@@ -91,9 +74,13 @@
 * timelimit_question
     - utter_timelimit_question
 
-## repeat graded assignment question answer
-* repeat_graded_assignment_question
-    - utter_repeat_graded_assignment_question
+## change profile info question answer
+* change_info
+    - utter_change_info_question
+
+## covid-19 question answer
+* covid19_help
+    - utter_covid10_help_question
 
 
     

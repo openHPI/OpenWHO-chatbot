@@ -111,14 +111,6 @@
 - How to participate in a course?
 - Where to enroll in a course?
 
-## intent:change_email_question
-- How can I change my email?
-- Where can i change my email address?
-- I want to change email
-- I want to use a different email
-- How can I use a different email?
-- Where can I set my email address?
-
 ## intent:where_certificate_question
 - Where can I find my certificate for the course [COVID-19](course_name)?
 - How can I download a [confirmation of participation](certificate_type)?
@@ -169,13 +161,30 @@
 - What is the startdate of my course?
 - How much time do I have to finish this course?
 
-## intent:repeat_graded_assignment_question
-- I want to repeat my graded assignment
-- I failed my graded assignment, what can I do now?
-- How can I redo my assignment?
-- I have less than 80% on my assignment
-- How can I repeat my graded assignment?
+## intent:covid19_help
+- I want to help 
+- How do I help?
+- Do I have [COVID-19](virus)?
+- How can I test for [COVID-19](virus)?
+- I want to get tested for [Corona](virus)?
 
-<!-- ## intent:where_faq
-- Where can I find the FAQS?
--  -->
+## intent:change_info
+- I want to change my [picture](profile-info)
+- I want to change my [name](profile-info)
+- I want to change my [name](profile-info) on the certificate
+- Correct my [name](profile-info) on the certificate
+- How do i change my [name](profile-info)?
+- I misspelled my [name](profile-info)
+- [Name](profile-info) issue
+- I want Dr in my [name](profile-info)
+- How to correct [name](profile-info)?
+- I want to correct my [name](profile-info)
+- I want to correct my [picture](profile-info)
+- How can I change my [email](profile-info)?
+- Where can i change my [email address](profile-info)?
+- I want to change [e-mail](profile-info)
+- I want to use a different [mail](profile-info)
+- How can I use a different [mail](profile-info)?
+- Where can I set my [email address](profile-info)?
+
+
