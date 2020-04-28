@@ -64,19 +64,19 @@ responses:
     - text: "All OpenWHO courses are free and open to anyone wishing to register."
 
   utter_confirmation_of_participation_question:
-    - text: "OpenWHO offers certificates of completion for certain courses. This information is available on the course specific landing page."
+    - text: "OpenWHO offers certificates of completion for certain courses. This information is available on the course-specific landing page."
 
   utter_confirmation_of_participation_download_question:
     - text: "Once you have successfully completed a course, you can download the confirmation of participation in progress section, located on the top course navigation. Link to download the confirmation of participation is at the bottom of the progress page."
 
   utter_account_creation_question:
-    - text: "Anyone can create a profile on OpenWHO. 'Log in' button is located on the top navigation bar, on the far right. Click on it and choose 'Create new account.' It's going to open a new page where you will need to fill out your name, last name, email address and the password. Once it's done, click on 'Register for OpenWHO.'' You will receive a link in your email to confirm your account."
+    - text: "Anyone can create a profile on OpenWHO. 'Log in' button is located on the top navigation bar, on the far right. Click on it and choose 'Create new account.' It's going to open a new page where you will need to fill out your name, last name, email address and the password. Once it's done, click on 'Register for OpenWHO.' You will receive a link in your email to confirm your account."
 
   utter_confirmation_email_problem:
     - text: "If you have not received a confirmation email, please check your spam folder and move the email to your primary mailbox. Please try resetting your password if your problem persists: https://openwho.org/account/reset/new"
 
   utter_course_enrollment_question:
-    - text: "Once you have created a profile and are logged in, choose the course you want to take. To learn more about the course, click on 'Show course details.' To enroll, click on 'Enroll me for this course.' Once enrolled, you can start the course immediately or come back later."
+    - text: "Once you have created a profile and are logged in, choose the course you want to take. To learn more about the course, click on 'Show course details.' To enrol, click on 'Enroll me for this course.' Once enrolled, you can start the course immediately or come back later."
 
   utter_mobile_device_question:
     - text: "OpenWHO has a mobile app, for both iOS and Android devices. Certain content can be downloaded to the App and used offline. OpenWHO can also be viewed via the internet browser on your mobile device."
@@ -88,43 +88,43 @@ responses:
     - text: "In case of technical difficulties, please send us a message through the helpdesk explaining the problem. We will get back to you as soon as possible."
 
   utter_who_credentials_usage_question:
-    - text: "Yes, you can use your WHO credentials to access OpenWHO courses. However, if you have issues logging in using your WIMS account, please create an account with your personal email address."
+    - text: "Yes, you can use your WHO credentials to access OpenWHO courses. However, if you have issues logging in using your WIMS account, please create an account with your email address."
 
   utter_whats_openwho_question:
     - text: "OpenWHO is WHO’s new interactive, web-based, knowledge-transfer platform offering online courses to improve the response to health emergencies.\nOpenWHO enables the Organization and its key partners to transfer life-saving knowledge to large numbers of frontline responders around the world."
   
   utter_why_openwho_question:
-    - text: "The corporate website has difficulties in hosting enormous volumes of visits during emergencies such as pandemics and outbreaks.\nOpenWHO can scale up to 1 million users during outbreaks and pandemics.\nIt is free and accessible anywhere from anytime."
+    - text: "The corporate website has difficulties in hosting enormous volumes of visits during emergencies such as pandemics and outbreaks.\nOpenWHO can scale up to 1 million users during outbreaks and pandemics.\nIt is free and accessible anywhere from any time."
 
   utter_openwho_access_question:
     - text: "OpenWHO courses are offered for free to anyone who registers with their email address."
 
   utter_course_type_question:
-    - text: "OpenWHO offers three levels of courses (basic, intermediate and advanced) under four channels:\nOutbreak channel introduces knowledge and tools on specific diseases.\nGo social! Focuses on crosscutting interventions such as risk communication.\nReady for response talks about humanitarian response and how best to engage in emergency situations.\nPreparing for pandemics brings together courses on various aspects of influenza events.\nDuring emergencies, OpenWHO also produces special knowledge resources packages adapted from existing contents."
+    - text: "OpenWHO offers three levels of courses (basic, intermediate and advanced) under four channels:\nOutbreak channel introduces knowledge and tools on specific diseases.\nGo social! Focuses on crosscutting interventions such as risk communication.\nReady for response talks about humanitarian response and how best to engage in emergencies.\nPreparing for pandemics brings together courses on various aspects of influenza events.\nDuring emergencies, OpenWHO also produces special knowledge resources packages adapted from existing contents."
 
   utter_course_structure_question:
-    - text: "Many courses consist of a combination of downloadable video lectures and presentation slides, as well as self-assessments to test your knowledge.\nDiscussion forums are also available for users to share insight with experts in the field.\nA knowledge resource package for the use of health emergency response usually consists of presentations in the format of PDF, accompanied with audio recordings in the language spoken by the local communities."
+    - text: "Many courses consist of a combination of downloadable video lectures and presentation slides, as well as self-assessments to test your knowledge.\nDiscussion forums are also available for users to share insight with experts in the field.\nA knowledge resource package for the use of health emergency response usually consists of presentations in the format of PDF, accompanied by audio recordings in the language spoken by the local communities."
 
   utter_past_outbreak_question:
-    - text: "OpenWHO has been actively support all major outbreaks over the past 12 months: the plague outbreak in Madagascar; diphtheria for the Rohingya refugee crisis in Bangladesh; the Lassa fever outbreak in Nigeria; and two Ebola outbreaks in the Democratic Republic of the Congo (DRC)."
+    - text: "OpenWHO has been actively supporting all major outbreaks over the past 12 months: the plague outbreak in Madagascar; diphtheria for the Rohingya refugee crisis in Bangladesh; the Lassa fever outbreak in Nigeria; and two Ebola outbreaks in the Democratic Republic of the Congo (DRC)."
 
   utter_ongoing_outbreak_question:
-    - text: "OpenWHO produces Knowledge resource packages from existing content, update and adapt them to the specific outbreak context and translate the materials into the languages spoken in the affected areas through translator NGOs and in-house native speakers"
+    - text: "OpenWHO produces Knowledge resource packages from existing content, update and adapt them to the specific outbreak context and translate the materials into the languages spoken in the affected areas through translator NGOs and in-house native speakers."
 
   utter_keynumbers_question:
-    - text: "Nearly 60k + enrollments from 195 countries.\nMore than 37 000 unique users.\nCountries where most users come from: USA, Nigeria, India, Portugal, Saudi Arabia, UK, Switzerland, Malta, France, Australia, Canada, Pakistan, DRC, Uganda, etc.\nCities where most users come from:\nLagos, Philadelphia, Cairo, Riyadh, Lisbon, Jeddah, Islamabad, London, Johannesburg, Porto, Sao Paulo, etc."
+    - text: "Nearly 60k + enrollments from 195 countries.\nMore than 37 000 unique users.\nCountries where most users come from USA, Nigeria, India, Portugal, Saudi Arabia, UK, Switzerland, Malta, France, Australia, Canada, Pakistan, DRC, Uganda, etc.\nCities where most users come from:\nLagos, Philadelphia, Cairo, Riyadh, Lisbon, Jeddah, Islamabad, London, Johannesburg, Porto, Sao Paulo, etc."
 
   utter_offered_languages_question:
     - text: "Most courses are offered in English and French.\nCourses are translated into more than 20 languages apart from UN official ones, including Swahili, Hausa, Malagasy, Lingala, Kanuri, etc."
 
   utter_where_certificate_question:
-    - text: "Once you have completed the course certificates can be downloaded on the documents page: https://openwho.org/dashboard/documents. Please note that many courses do not offer any self-tests or assignments. Therefore, these courses do not offer a record of achievement. More information are available on the course specific landing page."
+    - text: "Once you have completed the course certificates can be downloaded on the Documents page: https://openwho.org/dashboard/documents. Please note that many courses do not offer any self-tests or assignments. Therefore, these courses do not offer a record of achievement. More information is available on the course-specific landing page."
 
   utter_outdated_browser_question:
-    - text: "You might be using an outdated browser. This could cause the problems. We also offer an app for mobile use. We also offer an app for mobile use. You can find our Android app here: https://play.google.com/store/apps/details?id=de.xikolo.openwho&hl=en. You can find our iOS-App here: https://apps.apple.com/us/app/openwho/id1183923481"
+    - text: "You might be using an outdated browser. This could cause problems. We also offer an app for mobile use. We also offer an app for mobile use. You can find our Android app here: https://play.google.com/store/apps/details?id=de.xikolo.openwho&hl=en. You can find our iOS-App here: https://apps.apple.com/us/app/openwho/id1183923481"
 
   utter_birthday_question:
-    - text: "Your date of birth is not mandatory on openWHO.  Furthermore, your date of birth will not be shown on certificates."
+    - text: "Your date of birth is not mandatory on openWHO. Furthermore, your date of birth will not be shown on certificates."
 
   utter_transcription_question:
     - text: "You can download a transcription below each of the videos. Just click on the button."
@@ -133,7 +133,7 @@ responses:
     - text: "The course is self-paced. You can just enter and start the course."
   
   utter_change_info_question:
-    - text: "You can change this information in your personal openWHO profile. Please log on to openWHO and go to your profile: https://openwho.org/dashboard/profile. There you can change your email address, name or profile picture. Overwrite the existing value and hit the check mark."
+    - text: "You can change this information in your openWHO profile. Please log on to openWHO and go to your profile: https://openwho.org/dashboard/profile. There you can change your email address, name or profile picture. Overwrite the existing value and hit the checkmark."
 
   utter_covid10_help_question:
     - text: "This is the technical support of openWHO. We help you in case of technical problems with the openWHO platform. We do not offer content support for the course via the helpdesk. If you have a question for the WHO, please contact the WHO directly."
