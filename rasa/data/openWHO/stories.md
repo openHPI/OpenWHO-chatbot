@@ -70,10 +70,6 @@
 * transcription_question
     - utter_transcription_question
 
-## timelimit question answer
-* timelimit_question
-    - utter_timelimit_question
-
 ## change profile info question answer
 * change_info
     - utter_change_info_question

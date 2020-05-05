@@ -23,22 +23,16 @@ intents:
 actions:
   - utter_payment_question
   - utter_timelimit_question
-  - utter_confirmation_of_participation_question
-  - utter_confirmation_of_participation_download_question
   - utter_account_creation_question
   - utter_confirmation_email_problem
   - utter_mobile_device_question
   - utter_password_reset_question
-  - utter_technical_difficulties_question
   - utter_who_credentials_usage_question
   - utter_whats_openwho_question
-  - utter_why_openwho_question
   - utter_openwho_access_question
   - utter_course_type_question
   - utter_course_structure_question
-  - utter_past_outbreak_question
   - utter_ongoing_outbreak_question
-  - utter_keynumbers_question
   - utter_offered_languages_question
   - utter_course_enrollment_question
   - utter_where_certificate_question
@@ -63,12 +57,6 @@ responses:
   utter_payment_question:
     - text: "All OpenWHO courses are free and open to anyone wishing to register."
 
-  utter_confirmation_of_participation_question:
-    - text: "OpenWHO offers certificates of completion for certain courses. This information is available on the course-specific landing page."
-
-  utter_confirmation_of_participation_download_question:
-    - text: "Once you have successfully completed a course, you can download the confirmation of participation in progress section, located on the top course navigation. Link to download the confirmation of participation is at the bottom of the progress page."
-
   utter_account_creation_question:
     - text: "Anyone can create a profile on OpenWHO. 'Log in' button is located on the top navigation bar, on the far right. Click on it and choose 'Create new account.' It's going to open a new page where you will need to fill out your name, last name, email address and the password. Once it's done, click on 'Register for OpenWHO.' You will receive a link in your email to confirm your account."
 
@@ -84,18 +72,12 @@ responses:
   utter_password_reset_question:
     - text: "Don't worry. Go to the 'Log in' page. Click on the link 'Forgot your password?'. A new page will open asking for your email address. Type it in. Click on 'Request password reset.' Your new password has been sent to your email."
 
-  utter_technical_difficulties_question:
-    - text: "In case of technical difficulties, please send us a message through the helpdesk explaining the problem. We will get back to you as soon as possible."
-
   utter_who_credentials_usage_question:
     - text: "Yes, you can use your WHO credentials to access OpenWHO courses. However, if you have issues logging in using your WIMS account, please create an account with your email address."
 
   utter_whats_openwho_question:
     - text: "OpenWHO is WHO’s new interactive, web-based, knowledge-transfer platform offering online courses to improve the response to health emergencies.\nOpenWHO enables the Organization and its key partners to transfer life-saving knowledge to large numbers of frontline responders around the world."
   
-  utter_why_openwho_question:
-    - text: "The corporate website has difficulties in hosting enormous volumes of visits during emergencies such as pandemics and outbreaks.\nOpenWHO can scale up to 1 million users during outbreaks and pandemics.\nIt is free and accessible anywhere from any time."
-
   utter_openwho_access_question:
     - text: "OpenWHO courses are offered for free to anyone who registers with their email address."
 
@@ -105,14 +87,8 @@ responses:
   utter_course_structure_question:
     - text: "Many courses consist of a combination of downloadable video lectures and presentation slides, as well as self-assessments to test your knowledge.\nDiscussion forums are also available for users to share insight with experts in the field.\nA knowledge resource package for the use of health emergency response usually consists of presentations in the format of PDF, accompanied by audio recordings in the language spoken by the local communities."
 
-  utter_past_outbreak_question:
-    - text: "OpenWHO has been actively supporting all major outbreaks over the past 12 months: the plague outbreak in Madagascar; diphtheria for the Rohingya refugee crisis in Bangladesh; the Lassa fever outbreak in Nigeria; and two Ebola outbreaks in the Democratic Republic of the Congo (DRC)."
-
   utter_ongoing_outbreak_question:
     - text: "OpenWHO produces Knowledge resource packages from existing content, update and adapt them to the specific outbreak context and translate the materials into the languages spoken in the affected areas through translator NGOs and in-house native speakers."
-
-  utter_keynumbers_question:
-    - text: "Nearly 60k + enrollments from 195 countries.\nMore than 37 000 unique users.\nCountries where most users come from USA, Nigeria, India, Portugal, Saudi Arabia, UK, Switzerland, Malta, France, Australia, Canada, Pakistan, DRC, Uganda, etc.\nCities where most users come from:\nLagos, Philadelphia, Cairo, Riyadh, Lisbon, Jeddah, Islamabad, London, Johannesburg, Porto, Sao Paulo, etc."
 
   utter_offered_languages_question:
     - text: "Most courses are offered in English and French.\nCourses are translated into more than 20 languages apart from UN official ones, including Swahili, Hausa, Malagasy, Lingala, Kanuri, etc."
