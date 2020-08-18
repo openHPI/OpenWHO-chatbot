@@ -33,3 +33,9 @@ policies:
     max_history: 5
   - name: FormPolicy
   - name: MappingPolicy
+
+importers:
+- name: MultiProjectImporter
+
+imports:
+- projects/openWHO
