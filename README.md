@@ -16,10 +16,10 @@ Recent years have shown a rise in chatbots on the internet. Reason for this are 
 
 1. Update config.yml with project to import. For example for openWHO:
 
-`
+```
 imports:
 - projects/openWHO
-`
+```
 
 2. Start the training and state models folder for current project:
 
