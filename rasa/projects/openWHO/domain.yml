@@ -19,6 +19,7 @@ intents:
   - timelimit_question
   - change_info
   - covid19_help
+  - greetUser: {triggers: utter_greet_user}
 
 actions:
   - utter_payment_question
@@ -49,10 +50,13 @@ entities:
   - certificate_type
 
 session_config:
-  session_expiration_time: 1  # value in minutes, 0 means infinitely long
+  session_expiration_time: 60  # value in minutes, 0 means infinitely long
   carry_over_slots_to_new_session: false  # set to false to forget slots between sessions
 
 responses:
+
+  utter_greet_user:
+    - text: "Hello! Welcome to the openWHO Support Chat. How may I help you?"
     
   utter_payment_question:
     - text: "All OpenWHO courses are free and open to anyone wishing to register."
