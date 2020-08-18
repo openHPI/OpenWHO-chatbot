@@ -1,0 +1,14 @@
+intents:
+  - greet: {triggers: utter_greet}
+  - goodbye: {triggers: utter_goodbye}
+  - thank: {triggers: utter_thank}
+  
+responses:
+  utter_greet:
+    - text: "Hello!"
+
+  utter_goodbye:
+    - text: "Goodbye!"
+  
+  utter_thank:
+    - text: "You are welcome."

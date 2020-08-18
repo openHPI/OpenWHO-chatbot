@@ -14,8 +14,17 @@ Recent years have shown a rise in chatbots on the internet. Reason for this are 
 
 ### Training
 
+1. Update config.yml with project to import. For example for openWHO:
+
+`
+imports:
+- projects/openWHO
+`
+
+2. Start the training and state models folder for current project:
+
 ```sh
-    rasa train --data data/openWHO -c config.yml -d openWHO/domain.yml --out models/openWHO
+    rasa train --out models/openWHO
 ```
 
 ### Usage
@@ -32,8 +41,8 @@ Recent years have shown a rise in chatbots on the internet. Reason for this are 
     rasa run actions -vv --actions actions.openSAP.account
 ```
 
-3. Inside /rasa start rasa
+3. Inside /rasa start rasa with models-folder for current project:
 
 ```sh
-    rasa run -vv -m models/openWHO --enable-api --log-file out.log --endpoints endpoints.yml --credentials credentials.yml
+    rasa run -vv -m projects/openWHO/models --enable-api
 ```
