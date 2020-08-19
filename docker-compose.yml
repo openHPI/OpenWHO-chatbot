@@ -4,7 +4,7 @@ services:
   rasa:
     image: openwho:2.0
     ports:
-      - "12345:5005"
+      - "12345:3000"
     command:  run -vv -m /app/models/ --enable-api --endpoints /app/endpoints.yml --credentials /app/credentials.yml --cors "*"
     networks: ['rasa-network']
     depends_on:
@@ -12,5 +12,5 @@ services:
   duckling:
     image: rasa/duckling:latest
     ports:
-      - "8000:8000"
+      - "8008:8008"
     networks: ['rasa-network']
