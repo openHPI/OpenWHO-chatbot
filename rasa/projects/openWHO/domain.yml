@@ -116,4 +116,4 @@ responses:
     - text: "You can change this information in your openWHO profile. Please log on to openWHO and go to [your profile](https://openwho.org/dashboard/profile). There you can change your email address, name, display name or date of birth. Click on the existing value, enter a new value and click on the checkmark."
 
   utter_covid10_help_question:
-    - text: "This is the technical support of openWHO. We help you in case of technical problems with the openWHO platform. We do not offer content support for the course via the helpdesk. If you have a question for the WHO, please contact the WHO directly."
+    - text: "This is the technical support of openWHO. We help you in case of technical problems with the openWHO platform. We do not offer content support for the course via the helpdesk. If you have a question for the WHO, please [contact the WHO directly](https://www.who.int/)."
