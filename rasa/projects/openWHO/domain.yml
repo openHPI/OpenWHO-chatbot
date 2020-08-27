@@ -98,7 +98,7 @@ responses:
     - text: "Most courses are offered in English and French.\nCourses are translated into more than 20 languages apart from UN official ones, including Swahili, Hausa, Malagasy, Lingala, Kanuri, etc."
 
   utter_where_certificate_question:
-    - text: "Once you have completed the course certificates can be downloaded <a href="https://openwho.org/dashboard/documents" target="_blank">here</a>. Please note that many courses do not offer any self-tests or assignments. Therefore, these courses do not offer a record of achievement. More information is available on the course-specific landing page."
+    - text: "Once you have completed the course certificates can be downloaded <a href='https://openwho.org/dashboard/documents' target='_blank'>here</a>. Please note that many courses do not offer any self-tests or assignments. Therefore, these courses do not offer a record of achievement. More information is available on the course-specific landing page."
 
   utter_outdated_browser_question:
     - text: "You might be using an outdated browser. This could cause problems. We also offer an app for mobile use. We also offer an app for mobile use. You can find our Android app [here](https://play.google.com/store/apps/details?id=de.xikolo.openwho&hl=en) and our iOS-App [here](https://apps.apple.com/us/app/openwho/id1183923481)."
