@@ -56,7 +56,7 @@ session_config:
 responses:
 
   utter_greet_user:
-    - text: "Hello! Welcome to the openWHO Support Chat. How may I help you?"
+    - text: "Hello! Welcome to the OpenWHO Support Chat. How may I help you?"
     
   utter_payment_question:
     - text: "All OpenWHO courses are free and open to anyone wishing to register."
@@ -74,7 +74,7 @@ responses:
     - text: "OpenWHO has a mobile app, for both iOS and Android devices. Certain content can be downloaded to the App and used offline. OpenWHO can also be viewed via the internet browser on your mobile device."
 
   utter_password_reset_question:
-    - text: "Don't worry. Go to the <a href='https://openwho.org/account/reset/new' target='_blank'>reset password page</a>. Type in your email address and click on 'Request password reset' A new password has been sent to your email."
+    - text: "Don't worry. Go to the <a href='https://openwho.org/account/reset/new' target='_blank'>reset password page</a>. Type in your email address and click on 'Request password reset'. A new password has been sent to your email."
 
   utter_who_credentials_usage_question:
     - text: "Yes, you can use your WHO credentials to access OpenWHO courses. However, if you have issues logging in using your WIMS account, please create an account with your email address."
@@ -104,7 +104,7 @@ responses:
     - text: "You might be using an outdated browser. This could cause problems. We also offer an app for mobile use. We also offer an app for mobile use. There you can find our <a href='https://play.google.com/store/apps/details?id=de.xikolo.openwho&hl=en' target='_blank'>Android App</a> and our <a href='https://apps.apple.com/us/app/openwho/id1183923481' target='_blank'>iOS-App</a>."
 
   utter_birthday_question:
-    - text: "Your date of birth is not mandatory on openWHO. Furthermore, your date of birth will not be shown on certificates."
+    - text: "Your date of birth is not mandatory on OpenWHO. Furthermore, your date of birth will not be shown on certificates."
 
   utter_transcription_question:
     - text: "You can download a transcription below each of the videos. Just click on the button."
@@ -113,7 +113,7 @@ responses:
     - text: "The course is self-paced. You can just enter and start the course."
   
   utter_change_info_question:
-    - text: "You can change this information in your openWHO profile. Please log on to openWHO and go to <a href='https://openwho.org/dashboard/profile' target='_blank'>your profile</a>. There you can change your email address, name, display name or date of birth. Click on the existing value, enter a new value and click on the checkmark."
+    - text: "You can change this information in your OpenWHO profile. Please log on to OpenWHO and go to <a href='https://openwho.org/dashboard/profile' target='_blank'>your profile</a>. There you can change your email address, name, display name or date of birth. Click on the existing value, enter a new value and click on the checkmark."
 
   utter_covid10_help_question:
-    - text: "This is the technical support of openWHO. We help you in case of technical problems with the openWHO platform. We do not offer content support for the course via the helpdesk. If you have a question for the WHO, please <a href='https://www.who.int/' target='_blank'>contact the WHO directly</a>."
+    - text: "This is the technical support of OpenWHO. We help you in case of technical problems with the OpenWHO platform. We do not offer content support for the course via the helpdesk. If you have a question for the WHO, please <a href='https://www.who.int/' target='_blank'>contact the WHO directly</a>."
