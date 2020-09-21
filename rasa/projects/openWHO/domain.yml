@@ -62,7 +62,7 @@ responses:
     - text: "All OpenWHO courses are free and open to anyone wishing to register."
 
   utter_account_creation_question:
-    - text: "Anyone can create a profile on OpenWHO. <a href='https://openwho.org/account/new' target='_blank'>Here</a>you can create a profile. Fill out your name, email address and set a password. Once it's done, click on 'Register for OpenWHO.' You will receive a link in your email to confirm your account."
+    - text: "Anyone can create a profile on OpenWHO. <a href='https://openwho.org/account/new' target='_blank'>Here</a> you can create a profile. Fill out your name, email address and set a password. Once it's done, click on 'Register for OpenWHO.' You will receive a link in your email to confirm your account."
 
   utter_confirmation_email_problem:
     - text: "If you have not received a confirmation email, please check your spam folder and move the email to your primary mailbox. If your problem persists, please try resetting your password <a href='https://openwho.org/account/reset/new' target='_blank'>here</a>."
