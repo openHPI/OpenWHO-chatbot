@@ -23,20 +23,28 @@ imports:
 
 ### Usage
 
-1. Start docker in the outer project structure
-
-```sh
-    docker run -p8001:8000 rasa/duckling
-```
-
-2. Inside /rasa start Action Server (only for openSAP)
+<!-- 2. Inside /rasa start Action Server (only for openSAP)
 
 ```sh
     rasa run actions -vv --actions actions.openSAP.account
-```
+``` -->
 
-3. Inside /rasa start rasa with models-folder for current project:
+Inside /rasa start rasa with models-folder for current project:
 
 ```sh
     rasa run -vv -m projects/openWHO/models --enable-api
+```
+
+## Docker
+
+1. Inside /rasa create the image
+
+```sh
+    docker image build -t openwho:1.0 .
+```
+
+2. Start docker-compose
+
+```sh
+    docker-compose -p openwho up
 ```
