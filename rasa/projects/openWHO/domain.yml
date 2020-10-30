@@ -14,6 +14,9 @@ session_config:
   carry_over_slots_to_new_session: false  # set to false to forget slots between sessions
 
 responses:
+  utter_anything_else:
+  - text: "Can I help you with anything else?"
+
   utter_faq/ask_payment:
   - text: "All OpenWHO courses are free and open to anyone wishing to register."
 
