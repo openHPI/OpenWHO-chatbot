@@ -15,7 +15,7 @@ session_config:
 
 responses:
   utter_anything_else:
-  - text: "Can I help you with anything else?"
+  - text: "Is there anything else I can help you with?"
 
   utter_faq/ask_payment:
   - text: "All OpenWHO courses are free and open to anyone wishing to register."

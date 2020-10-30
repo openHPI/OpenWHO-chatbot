@@ -9,10 +9,14 @@ actions:
   - utter_greet
   - utter_goodbye
   - utter_you_are_welcome
+  - utter_anything_else
   
 responses:
+  utter_anything_else:
+  - text: "Is there anything else I can help you with?"
+
   utter_greet:
-    - text: "Hello!"
+    - text: "Hello! What can I help you with?"
 
   utter_goodbye:
     - text: "Goodbye!"
