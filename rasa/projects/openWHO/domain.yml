@@ -1,11 +1,7 @@
 version: '2.0'
 
 intents:
-  - payment_question
   - faq
-
-actions:
-  - utter_payment_question
 
 entities:
   - profile-info
@@ -21,9 +17,6 @@ responses:
 
   utter_welcome:
   - text: "Hello! Welcome to the OpenWHO Support Chat. How may I help you?"
-
-  utter_payment_question:
-  - text: "All OpenWHO courses are free and open to anyone wishing to register."
     
   utter_faq/ask_payment:
   - text: "All OpenWHO courses are free and open to anyone wishing to register."
