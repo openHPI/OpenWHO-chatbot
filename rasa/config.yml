@@ -15,8 +15,6 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     retrieval_intent: faq
-  # - name: FallbackClassifier
-  #   threshold: 0.3
 
 policies:
   - name: MemoizationPolicy

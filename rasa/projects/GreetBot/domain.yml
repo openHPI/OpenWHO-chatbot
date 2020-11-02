@@ -4,23 +4,14 @@ intents:
   - greet
   - goodbye
   - thank
-  - affirm
-  - deny
-
+  
 actions:
   - utter_greet
   - utter_goodbye
   - utter_you_are_welcome
   - utter_anything_else
-  - utter_have_a_nice_day
-  - utter_more_info
   
 responses:
-  utter_more_info:
-  - text: "Okay. What can I help you with?"
-
-  utter_have_a_nice_day:
-  - text: "Okay. Have a nice day! Bye."
 
   utter_anything_else:
   - text: "Is there anything else I can help you with?"
@@ -36,4 +27,4 @@ responses:
 
 session_config:
   session_expiration_time: 60  # value in minutes, 0 means infinitely long
-  carry_over_slots_to_new_session: false  # set to false to forget slots between sessions
+  carry_over_slots_to_new_session: true  # set to false to forget slots between sessions
