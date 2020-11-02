@@ -6,4 +6,3 @@ rules:
     - intent: faq
     - action: utter_faq
     - action: utter_anything_else
-    

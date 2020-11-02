@@ -15,13 +15,15 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     retrieval_intent: faq
+  # - name: FallbackClassifier
+  #   threshold: 0.3
 
 policies:
   - name: MemoizationPolicy
-    max_history: 5
+    max_history: 100
   - name: TEDPolicy
-    max_history: 5
-    epochs: 10
+    max_history: 100
+    epochs: 100
   - name: RulePolicy
 
 importers:
