@@ -7,7 +7,7 @@ stories:
     - action: utter_faq
     - action: utter_anything_else
     - checkpoint: more_information
-    
+
 - story: faq & more information
   steps:
     - checkpoint: more_information
@@ -26,4 +26,3 @@ stories:
     - checkpoint: user_thanks_bot
     - intent: thank
     - action: utter_you_are_welcome
-
