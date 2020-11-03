@@ -1,20 +1,22 @@
 version: '2.0'
 
 stories:
-
-- story: faq & more information
+- story: faq only
   steps:
     - intent: faq
     - action: utter_faq
     - action: utter_anything_else
+    - checkpoint: more_information
+    
+- story: faq & more information
+  steps:
+    - checkpoint: more_information
     - intent: affirm
     - action: utter_more_info
 
 - story: faq & no more information
   steps:
-    - intent: faq
-    - action: utter_faq
-    - action: utter_anything_else
+    - checkpoint: more_information
     - intent: deny
     - action: utter_have_a_nice_day
     - checkpoint: user_thanks_bot
@@ -25,8 +27,3 @@ stories:
     - intent: thank
     - action: utter_you_are_welcome
 
-- story: faq only
-  steps:
-    - intent: faq
-    - action: utter_faq
-    - action: utter_anything_else
