@@ -8,6 +8,7 @@ intents:
 actions:
   - utter_more_info
   - utter_have_a_nice_day
+  - utter_end_of_conversation
 
 entities:
   - profile-info
@@ -22,6 +23,10 @@ session_config:
 responses:
   utter_have_a_nice_day:
   - text: "Okay. Have a nice day! Bye."
+
+  utter_end_of_conversation:
+  - custom:
+      signal: "End of Conversation"
 
   utter_more_info:
   - text: "Okay. What can I help you with?"
