@@ -8,7 +8,8 @@ stories:
   steps:
    - intent: goodbye
    - action: utter_goodbye
-- story: User thanks + bye
+   - action: utter_end_of_conversation
+- story: User thanks
   steps:
    - intent: thank
    - action: utter_you_are_welcome
