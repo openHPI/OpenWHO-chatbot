@@ -27,7 +27,7 @@ responses:
 
   utter_end_of_conversation:
   - custom:
-      signal: "End of Conversation"
+      endOfConversation: true
 
   utter_more_info:
   - text: "Okay. What can I help you with?"
