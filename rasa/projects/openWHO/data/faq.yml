@@ -170,6 +170,9 @@ nlu:
       - Do I have [COVID-19](virus)?
       - How can I test for [COVID-19](virus)?
       - I want to get tested for [Corona](virus)?
+      - Is there a vaccine yet?
+      - Where can I get tested?
+      - Where can I get vaccinated?
   - intent: faq/ask_change_info
     examples: |
       - I want to change my [picture](profile-info)
@@ -189,3 +192,13 @@ nlu:
       - I want to use a different [mail](profile-info)
       - How can I use a different [mail](profile-info)?
       - Where can I set my [email address](profile-info)?
+
+  - synonym: COVID-19
+    examples: |
+      - covid
+      - Corona
+      - Covid-19
+      - rona
+      - coronavirus
+      - corona
+      - Covid
