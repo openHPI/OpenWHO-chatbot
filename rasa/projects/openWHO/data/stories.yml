@@ -20,3 +20,37 @@ stories:
     - intent: deny
     - action: utter_have_a_nice_day
     - action: utter_end_of_conversation
+
+- story: get courses
+  steps:
+    - intent: get_courses
+    - action: action_get_courses
+
+- story: get achievements course-not-set
+  steps:
+    - intent: get_achievements
+    - action: action_course_set
+    - slot_was_set:
+      - course-set: false
+    - action: utter_ask_which_course
+    - action: action_get_courses
+    - intent: inform
+      entities:
+      - course-title: "Team Peer Assessments"
+    - action: action_set_current_course
+    - slot_was_set:
+      - current_course: "Team Peer Assessments"
+    - checkpoint: get_achievements
+
+- story: get achievements course-set
+  steps:
+    - intent: get_achievements
+    - action: action_course_set
+    - slot_was_set:
+      - course-set: true
+    - checkpoint: get_achievements
+
+- story: get achievements
+  steps:
+    - checkpoint: get_achievements
+    - action: action_get_achievements
