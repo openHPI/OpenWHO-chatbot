@@ -50,7 +50,35 @@ stories:
       - course-set: true
     - checkpoint: get_achievements
 
-- story: get achievements
+- story: get achievements and ask for certificate and affirm
   steps:
     - checkpoint: get_achievements
     - action: action_get_achievements
+    - slot_was_set:
+      - current_course_achieved: true
+    - action: utter_download_certificate
+    - intent: affirm
+    - action: action_download_certificate
+    - action: utter_anything_else
+    - checkpoint: more_information
+
+- story: get achievements and ask for certificate and deny
+  steps:
+    - checkpoint: get_achievements
+    - action: action_get_achievements
+    - slot_was_set:
+      - current_course_achieved: true
+    - action: utter_download_certificate
+    - intent: deny
+    - action: utter_anything_else
+    - checkpoint: more_information
+
+- story: get achievements and no certificate
+  steps:
+    - checkpoint: get_achievements
+    - action: action_get_achievements
+    - slot_was_set:
+      - current_course_achieved: false
+    - action: utter_anything_else
+    - checkpoint: more_information
+    

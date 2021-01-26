@@ -66,4 +66,17 @@ class ActionGetCourses(Action):
 				response = json.loads(r.content)
 				for achievement in response:
 					dispatcher.utter_message('{0}: {1}'.format(achievement['name'], achievement['description']))
+					if achievement['achieved']:
+						return[SlotSet('current_course_achieved', True)]
+					else:
+						return[SlotSet('current_course_achieved', False)]
+			else:
+				return []
+
+	class ActionGetCertificate(Action):
+		def name(self) -> Text:
+			return "action_download_certificate"
+
+		def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+			dispatcher.utter_message('Here is your certificate!')
 			return []
