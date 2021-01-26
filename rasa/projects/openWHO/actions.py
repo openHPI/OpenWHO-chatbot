@@ -53,13 +53,17 @@ class ActionGetCourses(Action):
 		def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 			current_state = tracker.current_state()
 			token = current_state['sender_id']
-			slots = tracker.slots
-			print(slots)
-			r = requests.get('http://localhost:3000/bridges/chatbot/my_courses/00000001-3300-4444-9999-000000000001/achievements', headers={"content-type": "application/json",
+			currentCourse = tracker.slots['current_course']
+			courseId = 0
+			allCourses = tracker.slots['all_courses']
+			for course in allCourses:
+				if course['title'] == currentCourse:
+					courseId = course['id']
+			r = requests.get('http://localhost:3000/bridges/chatbot/my_courses/{0}/achievements'.format(courseId), headers={"content-type": "application/json",
 			"Authorization": 'Bearer {0}'.format(token)})
 			status = r.status_code
 			if status == 200:
 				response = json.loads(r.content)
-				dispatcher.utter_message('YEEEEAH')
-				# print(response)
+				for achievement in response:
+					dispatcher.utter_message('{0}: {1}'.format(achievement['name'], achievement['description']))
 			return []
