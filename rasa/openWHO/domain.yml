@@ -1,0 +1,125 @@
+version: '3.0'
+intents:
+- deny
+- affirm
+- faq
+- get_courses
+- get_achievements
+- inform
+actions:
+- utter_more_info
+- utter_have_a_nice_day
+- utter_anything_else
+- utter_end_of_conversation
+- utter_use_contact_form
+- utter_ask_which_course
+- utter_download_certificate
+- action_get_courses
+- action_get_achievements
+- action_course_set
+- action_set_current_course
+- action_download_certificate
+entities:
+- profile-info
+- virus
+- course_name
+- certificate_type
+- country
+- course-title
+slots:
+  all_courses:
+    type: list
+    influence_conversation: false
+    mappings:
+    - type: custom
+  current_course_title:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+  current_course:
+    type: list
+    influence_conversation: false
+    mappings:
+    - type: custom
+  current_achievements:
+    type: list
+    influence_conversation: false
+    mappings:
+    - type: custom
+  course-set:
+    type: bool
+    mappings:
+    - type: custom
+  current_course_achieved:
+    type: bool
+    mappings:
+    - type: custom
+  course-title:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: course-title
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
+responses:
+  utter_download_certificate:
+  - text: Do you want to download the certificate?
+  utter_ask_which_course:
+  - text: Please select a course
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request.
+  utter_ask_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_use_contact_form:
+  - text: You can also use our contact form to get help for your technical problem. We will try to answer you as soon as possible.
+  utter_have_a_nice_day:
+  - text: Okay. Have a nice day! Bye.
+  utter_end_of_conversation:
+  - custom:
+      endOfConversation: true
+  utter_more_info:
+  - text: Okay. What can I help you with?
+  utter_anything_else:
+  - text: Is there anything else I can help you with?
+  utter_faq/ask_payment:
+  - text: All OpenWHO courses are free and open to anyone wishing to register.
+  utter_faq/ask_account_creation:
+  - text: Anyone can create a profile on OpenWHO. <a href='https://openwho.org/account/new' target='_blank'>Here</a> you can create a profile. Fill out your name, email address and set a password. Once it's done, click on 'Register for OpenWHO.' You will receive a link in your email to confirm your account.
+  utter_faq/ask_confirmation_email:
+  - text: If you have not received a confirmation email, please check your spam folder and move the email to your primary mailbox. If your problem persists, please try resetting your password <a href='https://openwho.org/account/reset/new' target='_blank'>here</a>.
+  utter_faq/ask_course_enrollment:
+  - text: Once you have created a profile and are logged in, choose the course you want to take. To learn more about the course, click on 'Show course details.' To enrol, click on 'Enroll me for this course.' Once enrolled, you can start the course immediately or come back later.
+  utter_faq/ask_mobile_device:
+  - text: OpenWHO has a mobile app, for both iOS and Android devices. Certain content can be downloaded to the App and used offline. OpenWHO can also be viewed via the internet browser on your mobile device.
+  utter_faq/ask_password_reset:
+  - text: Don't worry. Go to the <a href='https://openwho.org/account/reset/new' target='_blank'>reset password page</a>. Type in your email address and click on 'Request password reset'. A new password has been sent to your email.
+  utter_faq/ask_who_credentials:
+  - text: Yes, you can use your WHO credentials to access OpenWHO courses. However, if you have issues logging in using your WIMS account, please create an account with your email address.
+  utter_faq/ask_whats_openwho:
+  - text: "OpenWHO is WHO’s new interactive, web-based, knowledge-transfer platform offering online courses to improve the response to health emergencies.\nOpenWHO enables the Organization and its key partners to transfer life-saving knowledge to large numbers of frontline responders around the world."
+  utter_faq/ask_access_openwho:
+  - text: OpenWHO courses are offered for free to anyone who registers with their email address.
+  utter_faq/ask_course_types:
+  - text: "OpenWHO offers three levels of courses (basic, intermediate and advanced) under four channels:\nOutbreak channel introduces knowledge and tools on specific diseases.\nGo social! Focuses on crosscutting interventions such as risk communication.\nReady for response talks about humanitarian response and how best to engage in emergencies.\nPreparing for pandemics brings together courses on various aspects of influenza events.\nDuring emergencies, OpenWHO also produces special knowledge resources packages adapted from existing contents."
+  utter_faq/ask_course_structure:
+  - text: "Many courses consist of a combination of downloadable video lectures and presentation slides, as well as self-assessments to test your knowledge.\nDiscussion forums are also available for users to share insight with experts in the field.\nA knowledge resource package for the use of health emergency response usually consists of presentations in the format of PDF, accompanied by audio recordings in the language spoken by the local communities."
+  utter_faq/ask_ongoing_outbreak:
+  - text: OpenWHO produces Knowledge resource packages from existing content, update and adapt them to the specific outbreak context and translate the materials into the languages spoken in the affected areas through translator NGOs and in-house native speakers.
+  utter_faq/ask_offered_languages:
+  - text: "Most courses are offered in English and French.\nCourses are translated into more than 20 languages apart from UN official ones, including Swahili, Hausa, Malagasy, Lingala, Kanuri, etc."
+  utter_faq/ask_find_certificate:
+  - text: Once you have completed the course certificates can be downloaded <a href='https://openwho.org/dashboard/documents' target='_blank'>here</a>. Please note that many courses do not offer any self-tests or assignments. Therefore, these courses do not offer a record of achievement. More information is available on the course-specific landing page.
+  utter_faq/ask_outdated_browser:
+  - text: You might be using an outdated browser. This could cause problems. We also offer an app for mobile use. We also offer an app for mobile use. There you can find our <a href='https://play.google.com/store/apps/details?id=de.xikolo.openwho&hl=en' target='_blank'>Android App</a> and our <a href='https://apps.apple.com/us/app/openwho/id1183923481' target='_blank'>iOS-App</a>.
+  utter_faq/ask_change_birthday:
+  - text: Your date of birth is not mandatory on OpenWHO. Furthermore, your date of birth will not be shown on certificates.
+  utter_faq/ask_transcription:
+  - text: You can download a transcription below each of the videos. Just click on the button.
+  utter_faq/ask_course_timelimit:
+  - text: The course is self-paced. You can just enter and start the course.
+  utter_faq/ask_change_info:
+  - text: You can change this information in your OpenWHO profile. Please log on to OpenWHO and go to <a href='https://openwho.org/dashboard/profile' target='_blank'>your profile</a>. There you can change your email address, name, display name or date of birth. Click on the existing value, enter a new value and click on the checkmark.
+  utter_faq/ask_covid19_help:
+  - text: This is the technical support of OpenWHO. We help you in case of technical problems with the OpenWHO platform. We do not offer content support for the course via the helpdesk. If you have a question for the WHO, please <a href='https://www.who.int/' target='_blank'>contact the WHO directly</a>.

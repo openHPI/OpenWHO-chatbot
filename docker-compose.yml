@@ -1,9 +1,22 @@
-version: '3.3'
-networks: {rasa-network: {}}
+version: '3'
 services:
-  rasa:
-    image: openwho:2.0
-    ports:
-      - "54321:5005"
-    command:  run -vv -m /app/models/ --enable-api --endpoints /app/endpoints.yml --credentials /app/credentials.yml --cors "*"
-    networks: ['rasa-network']
+    rasa:
+      container_name: "rasa_server_openwho"
+      user: root
+      build: 
+        context: ./rasa/openWHO
+      volumes:
+      - "./rasa/openWHO:/app"
+      ports: 
+        - "5005:5005"
+        # Port Server: 54321:5005
+    action_server:
+      container_name: "action_server_openwho"
+      build: 
+        context: ./rasa/openWHO/actions
+      volumes:
+        - ./rasa/openWHO/actions:/app/actions
+        - ./rasa/openWHO/data:/app/data
+      ports:
+        - 5055:5055
+        #Port Server: 54321:5055
