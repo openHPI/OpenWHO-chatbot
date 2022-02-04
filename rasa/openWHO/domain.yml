@@ -1,24 +1,32 @@
 version: '3.0'
+forms:
+  course_form:
+    ignored_intents:
+    - faq
+    - greet
+    - goodbye
+    - thank
+    - deny
+    - affirm
+    required_slots:
+    - current_course_title
 intents:
 - deny
 - affirm
 - faq
-- get_courses
+- get_course
 - get_achievements
-- inform
+- get_courses
+- inform:
+    use_entities: true
 actions:
-- utter_more_info
-- utter_have_a_nice_day
-- utter_anything_else
-- utter_end_of_conversation
-- utter_use_contact_form
-- utter_ask_which_course
-- utter_download_certificate
 - action_get_courses
+- action_get_courses_buttons
 - action_get_achievements
 - action_course_set
 - action_set_current_course
 - action_download_certificate
+- action_all_slots
 entities:
 - profile-info
 - virus
@@ -26,6 +34,7 @@ entities:
 - certificate_type
 - country
 - course-title
+- Course
 slots:
   all_courses:
     type: list
@@ -36,7 +45,10 @@ slots:
     type: text
     influence_conversation: false
     mappings:
-    - type: custom
+    - type: from_text
+      conditions:
+      - active_loop: course_form
+        requested_slot: current_course_title
   current_course:
     type: list
     influence_conversation: false
@@ -55,30 +67,35 @@ slots:
     type: bool
     mappings:
     - type: custom
-  course-title:
-    type: text
+  courses_available:
+    type: bool
     mappings:
-    - type: from_entity
-      entity: course-title
+    - type: custom
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: false
+  carry_over_slots_to_new_session: true
 responses:
+  utter_submit:
+  - text: Thanks for providing me with the course title!
+  utter_starting_search_with_parameters:
+  - text: "I am doing a course search now with the following paramenters:\n - course: {current_course_title}"
+  utter_finished:
+  - text: Conversation ends.
   utter_download_certificate:
   - text: Do you want to download the certificate?
   utter_ask_which_course:
-  - text: Please select a course
+  - text: Please select a course for which you want to receive your achievements.
   utter_out_of_scope:
   - text: Sorry, I can't handle that request.
   utter_ask_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_use_contact_form:
   - text: You can also use our contact form to get help for your technical problem. We will try to answer you as soon as possible.
-  utter_have_a_nice_day:
-  - text: Okay. Have a nice day! Bye.
   utter_end_of_conversation:
   - custom:
-      endOfConversation: true
+      signal: End of Conversation
+  utter_have_a_nice_day:
+  - text: Okay. Have a nice day! Bye.
   utter_more_info:
   - text: Okay. What can I help you with?
   utter_anything_else:
