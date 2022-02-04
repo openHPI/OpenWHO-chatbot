@@ -3,7 +3,17 @@
 ## exclude models folder ##
 rasa/models/*
 
+## exclude rasa cache
+
+.rasa
+
 **models
+
+graph.html
+keras.json
+global.yml
+.bash_history
+
 
 ### Linux ###
 *~
