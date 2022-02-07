@@ -13,9 +13,6 @@ pipeline:
   - name: DIETClassifier
     epochs: 100
   - name: EntitySynonymMapper
-  - name: RegexEntityExtractor
-    case_sensitive: False
-    use_lookup_tables: True
   - name: ResponseSelector
     epochs: 100
     retrieval_intent: faq

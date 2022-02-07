@@ -13,12 +13,9 @@ class CourseSet(Action):
 
 	def run(self, dispatcher, tracker, domain):
 		currentCourse = tracker.get_slot('current_course_title')
-		print(currentCourse)
 		if currentCourse:
-			print('true')
 			return [SlotSet('course-set', True)]
 		else:
-			print('false')
 			return [SlotSet('course-set', False)]
 
 class PrintAllSlots(Action):
@@ -35,7 +32,6 @@ class SetCurrentCourse(Action):
 
 	def run(self, dispatcher, tracker, domain):
 		currentCourse = tracker.latest_message['text']
-		print(currentCourse)
 		return [SlotSet('current_course_title', currentCourse)]
 
 class ActionGetCourses(Action):
@@ -126,7 +122,7 @@ class ActionGetAchievements(Action):
 			headers={
 				"content-type": "application/json",
 				"Authorization": 'Bearer {0}'.format(token), 
-				"Accept-Language": 'de'
+				"Accept-Language": "en"
 			})
 			status = r.status_code
 			if status == 200:

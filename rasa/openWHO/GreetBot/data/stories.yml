@@ -4,11 +4,14 @@ stories:
 - story: User greets
   steps:
    - intent: greet
+   - action: utter_greet
+
 - story: User goodbye
   steps:
    - intent: goodbye
    - action: utter_goodbye
    - action: utter_end_of_conversation
+   
 - story: User thanks
   steps:
    - intent: thank
