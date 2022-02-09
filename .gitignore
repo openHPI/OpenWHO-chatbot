@@ -5,6 +5,13 @@ rasa/models/*
 
 **models
 
+graph.html
+keras.json
+global.yml
+.bash_history
+
+.rasa
+
 ### Linux ###
 *~
 

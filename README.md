@@ -1,4 +1,4 @@
-# KI-Campus Chatbot
+# openWHO Chatbot Version 1
 
 ## Training of the Model 
 
