@@ -1,10 +1,11 @@
-language: en
+recipe: default.v1
+
+language: "en"
 
 pipeline:
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
-  - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
     analyzer: char_wb
     min_ngram: 1
@@ -15,19 +16,17 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     retrieval_intent: faq
-  - name: FallbackClassifier
-    threshold: 0.7
 
 policies:
   - name: MemoizationPolicy
-    max_history: 100
-  - name: TEDPolicy
-    max_history: 100
-    epochs: 100
   - name: RulePolicy
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+    constrain_similarities: true
 
 importers:
 - name: MultiProjectImporter
 
 imports:
-- projects/openWHO
+  - ./GreetBot
