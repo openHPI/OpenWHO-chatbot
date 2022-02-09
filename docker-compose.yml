@@ -8,8 +8,8 @@ services:
       volumes:
       - "./rasa/openWHO:/app"
       ports: 
-        - "5005:5005"
-        # Port Server: 54321:5005
+        - "12345:5005"
+        # Server Port: 12345:5005
     action_server:
       # container_name: "action_server_openwho"
       build: 
@@ -19,4 +19,3 @@ services:
         - ./rasa/openWHO/data:/app/data
       ports:
         - 5055:5055
-        #Port Server: 54321:5055
