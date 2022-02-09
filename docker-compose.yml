@@ -8,6 +8,6 @@ services:
       volumes:
       - "./rasa/openWHO:/app"
       ports: 
-        - "54321:5005"
-        # Port Server: 54321:5005
+        - "12345:5005"
+        # Port Server: 12345:5005
         
