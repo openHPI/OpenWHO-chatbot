@@ -1,0 +1,6 @@
+# This file contains the different endpoints your bot can use.
+
+# for local development
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+  

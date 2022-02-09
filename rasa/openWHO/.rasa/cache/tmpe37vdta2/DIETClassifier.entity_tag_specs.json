@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-certificate_type",
+      "2": "I-certificate_type",
+      "3": "L-certificate_type",
+      "4": "U-certificate_type",
+      "5": "B-country",
+      "6": "I-country",
+      "7": "L-country",
+      "8": "U-country",
+      "9": "B-course_name",
+      "10": "I-course_name",
+      "11": "L-course_name",
+      "12": "U-course_name",
+      "13": "B-profile-info",
+      "14": "I-profile-info",
+      "15": "L-profile-info",
+      "16": "U-profile-info",
+      "17": "B-virus",
+      "18": "I-virus",
+      "19": "L-virus",
+      "20": "U-virus",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-certificate_type": 1,
+      "I-certificate_type": 2,
+      "L-certificate_type": 3,
+      "U-certificate_type": 4,
+      "B-country": 5,
+      "I-country": 6,
+      "L-country": 7,
+      "U-country": 8,
+      "B-course_name": 9,
+      "I-course_name": 10,
+      "L-course_name": 11,
+      "U-course_name": 12,
+      "B-profile-info": 13,
+      "I-profile-info": 14,
+      "L-profile-info": 15,
+      "U-profile-info": 16,
+      "B-virus": 17,
+      "I-virus": 18,
+      "L-virus": 19,
+      "U-virus": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
