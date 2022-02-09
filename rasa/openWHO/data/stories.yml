@@ -26,12 +26,9 @@ stories:
     - intent: get_courses
     - action: action_get_courses
 
-- story: Get achievements course not set courses available
+- story: Get achievements and courses available
   steps:
   - intent: get_achievements
-  - action: action_course_set
-  - slot_was_set:
-    - course-set: false
   - action: action_get_courses_buttons
   - slot_was_set:
     - courses_available: true
@@ -45,28 +42,15 @@ stories:
   - action: utter_starting_search_with_parameters
   - checkpoint: get_achievements
 
-- story: Get achievements course not set no courses available
+- story: Get achievements and no courses available
   steps:
   - intent: get_achievements
-  - action: action_course_set
-  - slot_was_set:
-    - course-set: false
   - action: action_get_courses_buttons
   - slot_was_set:
     - courses_available: false
   - action: utter_anything_else
 
-- story: Get achievements course set
-  steps:
-  - intent: get_achievements
-  - action: action_course_set
-  - slot_was_set:
-    - course-set: true
-  - action: utter_submit
-  - action: utter_starting_search_with_parameters
-  - checkpoint: get_achievements
-
-- story: get achievements and ask for certificate and affirm and course found
+- story: get achievements, achieved course and ask for certificate and affirm
   steps:
     - checkpoint: get_achievements
     - action: action_get_achievements
@@ -78,7 +62,7 @@ stories:
     - action: utter_anything_else
     - checkpoint: more_information
 
-- story: get achievements and ask for certificate and deny and course found
+- story: get achievements, achieved course and ask for certificate and deny
   steps:
     - checkpoint: get_achievements
     - action: action_get_achievements
@@ -89,7 +73,7 @@ stories:
     - action: utter_anything_else
     - checkpoint: more_information
 
-- story: get achievements and no certificate and course found
+- story: get achievements, not achieved course and no certificate
   steps:
     - checkpoint: get_achievements
     - action: action_get_achievements

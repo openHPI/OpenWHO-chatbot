@@ -1,7 +1,7 @@
 version: '3'
 services:
     rasa:
-      container_name: "rasa_server_openwho"
+      # container_name: "rasa_server_openwho"
       user: root
       build: 
         context: ./rasa/openWHO
@@ -11,7 +11,7 @@ services:
         - "5005:5005"
         # Port Server: 54321:5005
     action_server:
-      container_name: "action_server_openwho"
+      # container_name: "action_server_openwho"
       build: 
         context: ./rasa/openWHO/actions
       volumes:
