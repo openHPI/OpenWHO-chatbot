@@ -3,7 +3,7 @@
 ## Training of the Model 
 
 ```sh
-    cd openWHO/
+    cd rasa/openWHO/
     rasa train
 ```
 
@@ -27,5 +27,5 @@
 In the outer project structure run:
 
 ```sh
-    docker-compose -f docker-compose.yml -p openwho up --build
+    docker-compose up --build
 ```
