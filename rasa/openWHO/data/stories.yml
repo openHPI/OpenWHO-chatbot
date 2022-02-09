@@ -1,22 +1,82 @@
 version: '3.0'
 
 stories:
-- story: faq only
+- story: ask payment
   steps:
-    - intent: faq
-    - action: utter_faq
-    - action: utter_anything_else
-    - checkpoint: more_information
+    - intent: ask_payment
+    - action: utter_ask_payment
 
-- story: faq & more information
+- story: ask about mobile device
   steps:
-    - checkpoint: more_information
-    - intent: affirm
-    - action: utter_more_info
+    - intent: ask_mobile_device
+    - action: utter_ask_mobile_device
 
-- story: faq & no more information
+- story: ask whats openwho
   steps:
-    - checkpoint: more_information
-    - intent: deny
-    - action: utter_have_a_nice_day
-    - action: utter_end_of_conversation
+    - intent: ask_whats_openwho
+    - action: utter_ask_whats_openwho
+
+- story: ask access openwho
+  steps:
+    - intent: ask_access_openwho
+    - action: utter_ask_access_openwho
+
+- story: ask course types
+  steps:
+    - intent: ask_course_types
+    - action: utter_ask_course_types
+
+- story: ask course structure
+  steps:
+    - intent: ask_course_structure
+    - action: utter_ask_course_structure
+
+- story: ask ongoing outbreak
+  steps:
+    - intent: ask_ongoing_outbreak
+    - action: utter_ask_ongoing_outbreak
+
+- story: ask offered languages
+  steps:
+    - intent: ask_offered_languages
+    - action: utter_ask_offered_languages
+
+- story: ask course enrollment
+  steps:
+    - intent: ask_course_enrollment
+    - action: utter_ask_course_enrollment
+
+- story: ask find certificate
+  steps:
+    - intent: ask_find_certificate
+    - action: utter_ask_find_certificate
+
+- story: ask outdated browser
+  steps:
+    - intent: ask_outdated_browser
+    - action: utter_ask_outdated_browser
+
+- story: ask change birthday
+  steps:
+    - intent: ask_change_birthday
+    - action: utter_ask_change_birthday
+
+- story: ask transcription
+  steps:
+    - intent: ask_transcription
+    - action: utter_ask_transcription
+
+- story: ask course timelimit
+  steps:
+    - intent: ask_course_timelimit
+    - action: utter_ask_course_timelimit
+
+- story: ask covid19 help
+  steps:
+    - intent: ask_covid19_help
+    - action: utter_ask_covid19_help
+
+- story: ask change info
+  steps:
+    - intent: ask_change_info
+    - action: utter_ask_change_info

@@ -1,7 +1,7 @@
 version: '3.0'
 
 nlu:
-  - intent: faq/ask_payment
+  - intent: ask_payment
     examples: |
       - Do I have to pay for openwho courses? 
       - How much does openwho cost
@@ -9,22 +9,7 @@ nlu:
       - Do the courses cost money?
       - Is openwho free?
       - I don't want to pay money for the courses
-  - intent: faq/ask_account_creation
-    examples: |
-      - How do I create a profile? 
-      - How do I create an account?
-      - Where do I register?
-      - I need a new account
-      - How can I start using openwho?
-  - intent: faq/ask_confirmation_email
-    examples: |
-      - What to do in case I did not receive a confirmation email? 
-      - I did not recieve the confirmation email
-      - I did not get the confirmation email
-      - I do not find the confirmation mail 
-      - I can not see the email for confirmation
-      - Where do I find the confirmation mail?
-  - intent: faq/ask_mobile_device
+  - intent: ask_mobile_device
     examples: |
       - Will the platform work on mobile devices?
       - Can I use openwho on my phone
@@ -36,22 +21,7 @@ nlu:
       - Do you have a mobile App? 
       - Do you offer an App? 
       - Can I use OpenWHO on my phone? 
-  - intent: faq/ask_password_reset
-    examples: |
-      - I forgot my password, what can I do? 
-      - I lost my password
-      - I forgot my password
-      - How can I retrieve my password
-      - I need to reset my password
-      - Where can I reset my password
-      - Where can I retrieve my password
-  - intent: faq/ask_who_credentials
-    examples: |
-      - Can I use my who credentials to log in the platform? 
-      - Can I use my who account for openwho? 
-      - Do I need a new account for openwho or can I use my who account? 
-      - Can I use my who credentials
-  - intent: faq/ask_whats_openwho
+  - intent: ask_whats_openwho
     examples: |
       - What is OpenWHO?
       - Please explain openwho.
@@ -59,7 +29,7 @@ nlu:
       - What is this website? 
       - What can I do here? 
       - What is the purpose of OpenWHO? 
-  - intent: faq/ask_access_openwho
+  - intent: ask_access_openwho
     examples: |
       - Who can access OpenWHO courses?
       - Are there access restrictions for OpenWHO courses?
@@ -69,7 +39,7 @@ nlu:
       - Can anybody use OpenWHO? 
       - Can everybody use OpenWHO? 
       - Can anyone join OpenWHO? 
-  - intent: faq/ask_course_types
+  - intent: ask_course_types
     examples: |
       - What type of courses does OpenWHO offer?
       - What are the different course types? 
@@ -78,26 +48,26 @@ nlu:
       - Are all courses the same? 
       - What are the right courses for me? 
       - What are course differences? 
-  - intent: faq/ask_course_structure
+  - intent: ask_course_structure
     examples: |
       - How are courses structured?
       - What materials are used in a course?
       - What does a course contain? 
       - How does a course work? 
       - What can I expect from a course? 
-  - intent: faq/ask_ongoing_outbreak
+  - intent: ask_ongoing_outbreak
     examples: |
       - How does OpenWHO support ongoing outbreaks?
       - What does OpenWHO do for current outbrekas?
       - How does OpenWHO help with outbreaks? 
-  - intent: faq/ask_offered_languages
+  - intent: ask_offered_languages
     examples: |
       - What languages does OpenWHO offer? 
       - In what languages can I use OpenWHO? 
       - What languages are used? 
       - What languages do you offer? 
       - In what languages are the courses translated? 
-  - intent: faq/ask_course_enrollment
+  - intent: ask_course_enrollment
     examples: |
       - I cannot enter the course [COVID-19](course_name)
       - I want to enroll for the course [COVID-19](course_name)
@@ -113,7 +83,7 @@ nlu:
       - Where can I join a course?
       - How to participate in a course?
       - Where to enroll in a course?
-  - intent: faq/ask_find_certificate
+  - intent: ask_find_certificate
     examples: |
       - Where can I find my certificate for the course [COVID-19](course_name)?
       - How can I download a [confirmation of participation](certificate_type)?
@@ -127,7 +97,7 @@ nlu:
       - Please give me a confirmation
       - I need a certificate
       - I want a confirmation
-  - intent: faq/ask_outdated_browser
+  - intent: ask_outdated_browser
     examples: |
       - The video is not playing
       - How can I start the video?
@@ -135,7 +105,7 @@ nlu:
       - The video is not starting
       - How can I see the course video?
       - Why is the course video not playing?
-  - intent: faq/ask_change_birthday
+  - intent: ask_change_birthday
     examples: |
       - How can I change my birthday?
       - Where can I set my birthday?
@@ -144,7 +114,7 @@ nlu:
       - I want to change my birthday
       - I cannot set my birthday
       - I cannot find my birthday on the certificate
-  - intent: faq/ask_transcription
+  - intent: ask_transcription
     examples: |
       - Are there any transcriptions available?
       - Can I download a transcription for the video?
@@ -152,7 +122,7 @@ nlu:
       - I want a transcription
       - Where can I find the transcription for the video?
       - Where can I download the transcription?
-  - intent: faq/ask_course_timelimit
+  - intent: ask_course_timelimit
     examples: |
       - Do these courses have any time limit? 
       - How long can I do the courses? 
@@ -163,7 +133,7 @@ nlu:
       - What is the enddate of my course?
       - What is the startdate of my course?
       - How much time do I have to finish this course?
-  - intent: faq/ask_covid19_help
+  - intent: ask_covid19_help
     examples: |
       - I want to help 
       - How do I help?
@@ -173,7 +143,7 @@ nlu:
       - Is there a vaccine yet?
       - Where can I get tested?
       - Where can I get vaccinated?
-  - intent: faq/ask_change_info
+  - intent: ask_change_info
     examples: |
       - I want to change my [picture](profile-info)
       - I want to change my [name](profile-info)
