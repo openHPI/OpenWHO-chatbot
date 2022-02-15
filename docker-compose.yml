@@ -1,21 +1,16 @@
 version: '3'
 services:
     rasa:
-      # container_name: "rasa_server_openwho"
+      container_name: "rasa_server_openwho_zh"
       user: root
       build: 
-        context: ./rasa/openWHO
+        context: ./rasa/openWHO_zh
       volumes:
-      - "./rasa/openWHO:/app"
+      - "./rasa/openWHO_zh:/app"
       ports: 
-        - "54321:5005"
+        - "5005:5005"
         # Server Port: 12345:5005
-    action_server:
-      # container_name: "action_server_openwho"
-      build: 
-        context: ./rasa/openWHO/actions
-      volumes:
-        - ./rasa/openWHO/actions:/app/actions
-        - ./rasa/openWHO/data:/app/data
+    duckling:
+      image: rasa/duckling:latest
       ports:
-        - 5055:5055
+        - 8000:8000
