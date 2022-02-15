@@ -1,0 +1,52 @@
+version: '3.0'
+
+stories:
+- story: video not playing
+  steps:
+    - intent: video_not_playing
+    - action: utter_video_not_playing
+
+- story: download certificate
+  steps:
+    - intent: download_certificate
+    - action: utter_download_certificate
+
+- story: send certificate via email
+  steps:
+    - intent: mail_certificate
+    - action: utter_mail_certificate
+
+- story: courses in chinese
+  steps:
+    - intent: courses_in_chinese
+    - action: utter_courses_in_chinese
+
+- story: chinese translations
+  steps:
+    - intent: chinese_translations
+    - action: utter_chinese_translations
+
+- story: take a test
+  steps:
+    - intent: take_test
+    - action: utter_take_test
+
+- story: add email address
+  steps:
+    - intent: add_mail_address
+    - action: utter_add_mail_address
+
+- story: add requiered info to profile
+  steps:
+    - intent: add_info_profile
+    - action: utter_add_info_profile
+  
+- story: reset password
+  steps:
+    - intent: reset_password
+    - action: utter_reset_password
+
+- story: mobile apps
+  steps:
+    - intent: mobile_apps
+    - action: utter_mobile_apps

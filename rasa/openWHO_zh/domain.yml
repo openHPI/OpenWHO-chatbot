@@ -1,0 +1,41 @@
+version: '3.0'
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- video_not_playing
+- download_certificate
+- mail_certificate
+- courses_in_chinese
+- chinese_translations
+- take_test
+- add_mail_address
+- add_info_profile
+- reset_password
+- mobile_apps
+
+responses:
+  utter_video_not_playing:
+  - text: "因为我们的视频供应商vimeo不能在中国使用，所以您看不了视频。但是， 您可以下载视频下的课程字幕。"
+  utter_download_certificate:
+  - text: 一旦您完成课程，您可以在此链接下载您的证书。 <a href='https://openwho.org/dashboard/documents' target='_blank'>here</a>. 您可以在查看课程介绍细节的证书要求中找到此课程是否提供证书。
+  utter_mail_certificate:
+  - text: 我们个人不能单独发送给您证书。您可以通过此链接自行下载证书。<a href='https://openwho.org/dashboard/documents' target='_blank'>here</a>.
+  utter_courses_in_chinese:
+  - text: 您可以通过此链接找到中文课程。<a href='https://openwho.org/courses?lang=cn' target='_blank'>here</a>.
+  utter_chinese_translations:
+  - text: 在这个链接下您可以找到中文课程。<a href='https://openwho.org/courses?lang=cn' target='_blank'>here</a>. 请注意不是所有课程都有中文。有时候，中文课程不提供课程的所有翻译。
+  utter_take_test:
+  - text: 通常，您可以在每个课程结束的地方找到考试（作业）。你需要参加所有打分的作业来获得证书。请注意有些课程不提供打分的作业。
+  utter_add_mail_address:
+  - text: 您可以在您的个人页面更改您的邮箱地址。点击此链接<a href='https://openwho.org/dashboard/profile' target='_blank'>here</a>。
+  utter_add_info_profile:
+  - text: 您可以在您的个人页面自行更改个人信息。点击此链接进行更新 <a href='https://openwho.org/dashboard/profile' target='_blank'>here</a>。在您获得课程之前，你必须在链接中添加必须信息和选择专业领域。<a href='https://openwho.org/dashboard/profile' target='_blank'>here</a>.
+  utter_reset_password:
+  - text: 不用担心。 进入此链接<a href='https://openwho.org/account/reset/new' target='_blank'>reset password page</a>， 输入您的邮箱地址并点击’要求重置密码‘。新的密码将被发送到您的邮箱。
+  utter_mobile_apps:
+  - text: OpenWHO提供手机移动应用给苹果系统和安卓系统设备。一些确定内容可以下载到应用上通过无线方式使用。OpenWHO也可以在您移动设备上通过网页进行浏览。
+
+
