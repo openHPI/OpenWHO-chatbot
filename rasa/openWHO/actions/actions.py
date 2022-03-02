@@ -103,7 +103,6 @@ class ActionGetAchievements(Action):
 		return "action_get_achievements"
 
 	def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-		print("action get achievements")
 		course_achieved = False
 		currentCourse = []
 		courseId = 0
@@ -127,8 +126,8 @@ class ActionGetAchievements(Action):
 			status = r.status_code
 			if status == 200:
 				response = json.loads(r.content)
-				currentAchievements = response
-				for achievement in response:
+				currentAchievements = response['certificates']
+				for achievement in currentAchievements:
 					dispatcher.utter_message('{0}'.format(achievement['description']))
 					if achievement['achieved'] and not course_achieved:
 						course_achieved = True
