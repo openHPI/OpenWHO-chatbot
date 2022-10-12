@@ -1,7 +1,7 @@
 version: '3'
 services:
     rasa:
-      container_name: "rasa_server_openwho_zh"
+      # container_name: "rasa_server_openwho_zh"
       user: root
       build: 
         context: ./rasa/openWHO_zh
