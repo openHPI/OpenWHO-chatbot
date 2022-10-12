@@ -18,22 +18,6 @@ class CourseSet(Action):
 		else:
 			return [SlotSet('course-set', False)]
 
-class PrintAllSlots(Action):
-	def name(self):
-		return "action_all_slots"
-
-	def run(self, dispatcher, tracker, domain):
-		currentCourse = tracker.get_slot('current_course_title')
-		return []
-
-class SetCurrentCourse(Action):
-	def name(self):
-		return "action_set_current_course"
-
-	def run(self, dispatcher, tracker, domain):
-		currentCourse = tracker.latest_message['text']
-		return [SlotSet('current_course_title', currentCourse)]
-
 class ActionGetCourses(Action):
 	def name(self) -> Text:
 		return "action_get_courses_buttons"
@@ -57,7 +41,7 @@ class ActionGetCourses(Action):
 				buttonGroup = []
 				for course in response:
 					title = course['title']
-					buttonGroup.append({"payload": '{0}'.format(title), "title": title})
+					buttonGroup.append({"title": title, "payload": '/inform{{"Course": "{0}"}}'.format(title)})
 				dispatcher.utter_message(buttons = buttonGroup)
 				return [SlotSet('all_courses', response), SlotSet('courses_available', True)]
 		elif status == 401: # Status-Code 401 None
@@ -86,11 +70,9 @@ class ActionGetCourses(Action):
 				return [SlotSet('courses_available', False)]
 			else:
 				dispatcher.utter_message('You are currently enrolled in these courses:')
-				buttonGroup = []
 				for course in response:
 					title = course['title']
-					buttonGroup.append({"payload": '{0}'.format(title), "title": title})
-				dispatcher.utter_message(buttons = buttonGroup)
+					dispatcher.utter_message(title)
 				return [SlotSet('all_courses', response), SlotSet('courses_available', True)]
 		elif status == 401: # Status-Code 401 None
 			dispatcher.utter_message('You are currently not enrolled in any courses.')
@@ -131,7 +113,10 @@ class ActionGetAchievements(Action):
 					dispatcher.utter_message('{0}'.format(achievement['description']))
 					if achievement['achieved'] and not course_achieved:
 						course_achieved = True
-			return[SlotSet('current_course_achieved', course_achieved), SlotSet('current_course', currentCourse), SlotSet('current_achievements', currentAchievements)]
+			return[SlotSet('current_course_achieved', course_achieved), 
+			SlotSet('current_course', currentCourse), 
+			SlotSet('current_achievements', currentAchievements),
+			SlotSet('current_course_title', None)]
 		else:
 			dispatcher.utter_message('I am very sorry! I could not find the course you are looking for. Please try again by telling me the course title.')
 			return[SlotSet('current_course_achieved', course_achieved), SlotSet('current_course', currentCourse), SlotSet('current_achievements', currentAchievements)]

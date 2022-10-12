@@ -1,6 +1,19 @@
-version: '3.0'
+version: '3.1'
 
 nlu:
+  - intent: faq/ask_about_moocs
+    examples: |
+      - What are Massive Open Online Courses?
+      - Tell me about Massive Open Online Courses
+      - What are Moocs?
+      - What is a Mooc?
+      - What does Mooc mean?
+      - What does Mooc stand for?
+      - I do not understand what Mooc means
+      - Explain to me Moocs
+      - I want to know what Mooc means
+      - I want to know what a mooc is
+      - Can you tell me what a mooc is?
   - intent: faq/ask_payment
     examples: |
       - Do I have to pay for openwho courses? 
