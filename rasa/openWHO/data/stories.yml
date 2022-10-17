@@ -50,7 +50,6 @@ stories:
   - checkpoint: more_information
   - intent: deny
   - action: utter_have_a_nice_day
-  - action: utter_end_of_conversation
 
 - story: get achievements, no courses available
   steps:
@@ -71,6 +70,8 @@ stories:
   - action: course_form
   - active_loop: course_form
   - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
   - action: action_get_achievements
   - slot_was_set:
     - current_course_achieved: false
@@ -87,6 +88,8 @@ stories:
   - action: course_form
   - active_loop: course_form
   - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
   - action: action_get_achievements
   - slot_was_set:
     - current_course_achieved: true
@@ -106,6 +109,8 @@ stories:
   - action: course_form
   - active_loop: course_form
   - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
   - action: action_get_achievements
   - slot_was_set:
     - current_course_achieved: true
