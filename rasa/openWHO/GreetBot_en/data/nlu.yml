@@ -47,6 +47,8 @@ nlu:
       - byr
   - intent: greet
     examples: |
+      - Bom dia
+      - Bonjour
       - Good Morning
       - Good morning
       - Good mourning
@@ -57,10 +59,13 @@ nlu:
       - HI
       - Hallo
       - Hei
+      - Hellllooooooo
       - Hello
       - Hello!
       - Hey
       - Hey bot
+      - Heya
+      - Heylo
       - Hi
       - Hi bot
       - Hi man
@@ -69,6 +74,18 @@ nlu:
       - Hi'
       - Hi,
       - Hi, bot
+      - Hieee
+      - Hieeeeeeeeeeeee
+      - Hola
+      - I said, helllllloooooO!!!!
+      - Well hello there ;)
+      - What is up?
+      - Whats up
+      - Whats up my bot
+      - Whats up?
+      - ayyyy whaddup
+      - bonjour
+      - ey boss
       - good evening
       - good moring
       - good morning
@@ -80,17 +97,83 @@ nlu:
       - halloooo
       - halo
       - heeey
+      - heelio
+      - hell9o
       - hellio
       - hello
+      - hello everybody
+      - hello friend
+      - hello hi
+      - hello is anybody there
+      - hello it is me again
+      - hello robot
+      - hello there
+      - hello world
+      - hello, my name is [Charles Pfeffer](name)
+      - hello?
+      - hello]
+      - hellooo
+      - helloooo
       - helo
       - hey
+      - hey bot
+      - hey bot!
       - hey dude
       - hey hey
+      - hey let's talk
+      - hey rasa
+      - hey sara
+      - hey ther
+      - hey there
+      - hey there boy
       - hey there..
+      - hey, let's talk
+      - heya
+      - heyho
+      - heyo
+      - hhola
+      - hi
+      - hi !
+      - hi Mister
+      - hi again
+      - hi can you speak ?
+      - hi folks
+      - hi friend
+      - hi friends
       - hi hi
+      - hi i'm [Sandra Hernandez](name)
+      - hi im [Amanda Anderson](name)
+      - hi mrs rasa
+      - hi pal!
+      - hi there
+      - hi there it's me
       - hi!
+      - hi.........................................................
+      - hi?
+      - hieee
+      - hii
+      - hiihihi
+      - hiii
+      - hlo
+      - hola
+      - howdy
+      - i am [Karen Mease](name)
+      - jojojo
+      - jop
+      - konichiwa
+      - merhaba
+      - rasa hello
       - salut
+      - sup
+      - wasssup
+      - wasssup!
+      - what up
+      - whats popping
       - whats up
+      - yo
+      - yoo
+      - ssup?
+      - helleo
   - intent: thank
     examples: |
       - Cool. Thanks
