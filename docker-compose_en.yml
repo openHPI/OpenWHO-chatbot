@@ -4,18 +4,18 @@ services:
       # container_name: "rasa_server_openwho"
       user: root
       build: 
-        context: ./rasa/openWHO
+        context: ./rasa/openWHO_en
       volumes:
-      - "./rasa/openWHO:/app"
+      - "./rasa/openWHO_en:/app"
       ports: 
         - "54321:5005"
         # Server Port: 54321:5005
     action_server:
       # container_name: "action_server_openwho"
       build: 
-        context: ./rasa/openWHO/actions
+        context: ./rasa/openWHO_en/actions
       volumes:
-        - ./rasa/openWHO/actions:/app/actions
-        - ./rasa/openWHO/data:/app/data
+        - ./rasa/openWHO_en/actions:/app/actions
+        - ./rasa/openWHO_en/data:/app/data
       ports:
         - 5055:5055

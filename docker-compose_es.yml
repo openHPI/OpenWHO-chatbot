@@ -1,0 +1,18 @@
+version: '3'
+services:
+    rasa:
+      user: root
+      build: 
+        context: ./rasa/openWHO_es
+      volumes:
+      - "./rasa/openWHO_es:/app"
+      ports: 
+        - "10005:5005"
+    action_server:
+      build: 
+        context: ./rasa/openWHO_es/actions
+      volumes:
+        - ./rasa/openWHO_es/actions:/app/actions
+        - ./rasa/openWHO_es/data:/app/data
+      ports:
+        - 10005:5055
