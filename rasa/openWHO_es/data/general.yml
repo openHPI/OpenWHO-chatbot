@@ -1,0 +1,300 @@
+version: '3.1'
+
+nlu:
+  - intent: get_courses
+    examples: |
+        - Quiero mis cursos
+        - Dame todos mis cursos
+        - Muéstrame todos mis cursos
+        - Muéstrame todos los cursos en los que me inscribí
+        - Enumera todos mis cursos
+        - Quiero una lista de todos mis cursos
+        - Quiero mi lista de cursos
+  - intent: get_achievements
+    examples: |
+        - Quiero ver mis logros actuales
+        - Quiero ver mi progreso actual
+        - ¿Cuál es mi desempeño en este momento?
+        - Muéstrame todos mis logros
+        - Muéstrame mi progreso
+        - Enumera mis logros
+        - Quiero mis logros en el curso
+        - Quiero mi progreso en el curso
+        - Progreso actual
+  - intent: help
+    examples: |
+        - Necesito ayuda
+        - ¿En qué me puedes ayudar?
+        - ¿Puedes ayudarme?
+        - ¿Qué puedes hacer?
+        - Necesito algo de ayuda
+        - Ayúdame
+        - ¿Me puedes ayudar, por favor?
+        - Problema
+        - Problema grave
+        - ¿Cómo puedes ayudarme?
+        - ¿Cómo me ayudas?
+        - Necesito algo de ayuda
+        - ¿Cuáles son mis opciones?
+        - ¿Qué eres capaz de hacer?
+        - ¿Qué te puedo preguntar?
+        - ¿Qué puedo hacer?
+        - ¿Qué puedes demostrar?
+        - ¿Qué puedes hacer por mí?
+        - ¿Qué puedes hacer?
+        - ¿Qué puedes decirme?
+        - ¿Qué haces?
+        - Otra cosa
+        - ¿Hay otras opciones?
+        - ¿Puedo hacerte otra pregunta?
+        - ¿Puedes hacer algo más?
+        - ¿Puedes ayudarme?
+        - Regresa
+        - ¡Genial! ¿Puedo hacer algo más aquí?
+        - Hola, ¿qué puedes hacer por mí?
+        - Ayuda
+        - Ayúdame
+        - Ayuda, por favor
+        - Ayuda, por fa
+        - ¿Ayuda?
+        - Ayúdame
+  - intent: affirm
+    examples: |
+        - Sí
+        - Sípi
+        - Síí
+        - Claro
+        - Así es
+        - Ok
+        - ¡Genial!
+        - Bien, gracias
+        - Correcto
+        - Buena elección
+        - Suena muy bien
+  - intent: deny
+    examples: |
+        - No quiero
+        - No quiero dártelo
+        - No quiero decirlo
+        - No lo quiero decir
+        - No te voy a dar mi dirección de correo electrónico
+        - No te la voy a dar
+        - NEIN
+        - NO
+        - ¡NO QUIERO ESTO!
+        - No
+        - Ninguno de los dos
+        - Nunca
+        - No importa
+        - No
+        - No, gracias
+        - No, la verdad no.
+        - No, gracias
+        - No.
+        - Nop
+        - La verdad es que no
+        - Para nada
+        - Rechazar
+        - Definitivamente no
+        - Negar
+        - Me niego
+        - Esto no me gusta
+        - No lo creo
+        - No quiero ninguno
+        - No quiero
+        - No quiero darte mi correo electrónico
+        - No quiero
+        - No quiero aceptar :P jajaja
+        - Supongo que significa que no
+        - Me temo que no
+        - No estoy seguro
+        - Va bastante mal
+        - Apesta
+        - Es una porquería
+        - n
+        - na
+        - no
+        - No, estoy bien
+        - Na, no para mí
+        - Na, primera vez
+        - No, estoy bien
+        - Nel
+        - Nein
+        - Tampoco
+        - Nunca
+        - No importa
+        - No
+        - No :(
+        - No, no quiero
+        - No, aún no he decidido si quiero registrarme
+        - No, y no otra vez
+        - Nada de bots
+        - Imposible
+        - No puedo
+        - No acepto
+        - No, no quiero
+        - No quiero aceptar :P jajaja
+        - No, no lo haré
+        - No, señora
+        - No, señor
+        - No, lo siento
+        - No, gracias
+        - No, gracias
+        - No, gracias
+        - De ninguna manera
+        - No, lo hiciste mal
+        - ¡No!
+        - No, lo odio
+        - No, es mi primera vez
+        - No, gracias
+        - No, gracias
+        - No, gracias
+        - No, idiota
+        - No
+        - noooooooooo
+        - noooooooooooooooooooooooooooooooo
+        - no
+        - nop
+        - ¡Nop!
+        - No. Estoy bien
+        - No va nada bien
+        - La verdad, no
+        - Ahora no
+        - Todavía no
+        - nö
+        - Lo siento, ahora no.
+        - Aún no quiero decirlo
+        - Gracias, pero no
+        - Esto apesta
+        - Muy malo
+        - No necesito ayuda en la instalación
+        - No quiero decir el nombre de mi empresa
+        - No, detente
+        - ¡¡¡Basta, no me importa!!!
+        - Ninguno
+        - No estoy de acuerdo
+  - intent: out_of_scope
+    examples: |
+        - ¿Cuál es la raíz cuadrada de 5?
+        - Quiero saber el tiempo
+        - ¿Cuál es el sentido de la vida?
+        - El refrigerador no funciona
+        - Mi tv no funciona
+        - Quiero una pizza
+        - Mi lavadora no funciona
+        - ¿Qué año es?
+        - Pide una pizza
+        - Quiero pedir una pizza
+        - ¿Qué tiempo hace hoy?
+        - ¿Qué tiempo hace?
+        - ¿Qué edad tienes?
+        - Suma dos más dos
+        - Hdjejene
+        - asd
+        - Título
+        - ¿Cuál es el pronóstico?
+        - Tonto
+        - Broma
+        - ¿Me das una hamburguesa?
+        - ¿YouTube puede hablar?
+        - ¿Puedes devolverme la llamada?
+        - ¿Puedes darme la contraseña de tu centro de datos?
+        - ¿Puedes darme la contraseña de tu centro de datos?
+        - ¿Sabes hacer sándwiches?
+        - ¿Puedes enviarme un Uber, por favor
+        - Quiero pedir comida
+        - ¿Cuánto es 2 + 2?
+        - ¿Quién es el presidente de [EE. UU.(país)]?
+        - ¿Cómo puedo mudarme a [EE. UU.](país)?
+        - ¿Cuál es la capital de [Alemania](país)?
+  - intent: bot_challenge
+    examples: |
+        - ¿Eres un bot?
+        - ¿Eres humano?
+        - ¿Estoy hablando con un bot?
+        - ¿Estoy hablando con un humano?
+        - Eres un bot, ¿no es así?
+        - ¿No eres un bot?
+        - ¿Eres un bot?
+        - ¿Eres un BOT?
+        - ¿Eres un bot?
+        - ¿Eres un chatbot?
+        - ¿Eres un bot de Rasa?
+        - ¿Eres un bot de verdad?
+        - ¿Eres un robot?
+        - ¿Eres IA?
+        - ¿Eres artificial?
+        - ¿Eres inteligencia artificial?
+        - ¿Eres un bot?
+        - ¿Eres un bot?
+        - ¿Eres un bot de Rasa?
+        - ¿Eres real?
+        - ¿Eres real? jaja
+        - ¿Realmente eres un bot?
+        - ¿Eres un robot?
+        - ¿Estás seguro de que eres un bot?
+        - ¿Bot?
+        - Porque eres un bot
+        - Supongo que eres un chatbot
+        - Ah, ¿eres un chatbot?
+        - Dime, ¿eres un bot?
+        - ¿Qué eres? ¿un bot?
+        - Eres un robot
+        - Eres IA
+        - Eres un chatbot
+        - Eres un bot
+        - Robot
+        - ¿Un bot real?
+        - ¿De verdad eres un bot?
+  - intent: human_handoff
+    examples: |
+        - Traspaso
+        - Operador
+        - Humano
+        - Quiero un humano
+        - ¿Puedo hablar con un agente?
+        - Un agente real, por favor
+        - Humano real
+        - Chatear con un agente
+        - Pásame con una persona, por favor
+        - Quiero platicar con un humano
+        - Transferir a un ser humano
+        - Por favor, pásame con un humano
+        - ¿Puedo hablar con un humano?
+        - ¿Puedo hablar con un humano?
+        - Hablar con un humano
+        - Quiero a un humano :(
+        - ¿Puedo hablar con un humano?
+        - Quiero platicar con un humano
+        - Quiero hablar con un humano
+        - ¿Puedo hablar con una persona real?
+        - Conectarme con una persona real
+        - Necesito una persona real
+        - ¿Puedo hablar con una persona real?
+        - Pásame con una persona real
+        - Pásame con una persona real, por favor
+        - Quiero hablar con una persona real
+  - intent: inform
+    examples: |
+        - Evaluaciones en equipos entre compañeros
+        - Nube y virtualización
+        - Geovisualización
+        - Formación de la OMS sobre atención clínica para infecciones respiratorias agudas graves
+        - Centros de cuidados de larga duración en el contexto de la COVID-19
+        - ePROTECT Infecciones respiratorias
+        - Diseño de las instalaciones de tratamiento de infecciones respiratorias agudas graves (IRAG)
+        - COVID-19: Directrices de planificación operativa y plataforma de socios COVID-19 para apoyar la preparación y respuesta de los países
+        - Envejecimiento saludable para lograr un impacto en el siglo XXI: Formación mundial en línea para líderes
+        - Introducción a la prevención y control de infecciones (PCI)
+        - Orientación sobre la planificación de vacunación y la distribución nacional de vacunas para la COVID-19
+        - Centros de cuidados de larga duración en el contexto de la COVID-19
+        - Curso de curta duração da OMS em cuidados clínicos na infecção respiratória aguda grave
+        - Diseño de las instalaciones de tratamiento de infecciones respiratorias agudas graves (IRAG)
+        - COVID-19: Directrices de planificación operativa y plataforma de socios COVID-19 para apoyar la preparación y respuesta de los países
+        - Prevención y control de infecciones (PCI) en el contexto de la COVID-19
+        - ePROTECT Infecciones respiratorias (EN)
+        - Formación de la OMS sobre atención clínica para infecciones respiratorias agudas graves
+        - Introducción a la COVID-19: métodos para la detección, prevención, respuesta y control
+        - Aprendizaje basado en competencias: Introducción
+        - Coordinación de grupos de salud
+        - Cólera: Introducción

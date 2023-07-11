@@ -1,0 +1,18 @@
+version: '3.1'
+intents:
+- greet
+- goodbye
+- thank
+
+responses:
+  utter_anything_else:
+  - text: ¿Puedo ayudarle en algo más?
+  utter_greet:
+  - text: ¡Hola! ¿En qué puedo ayudarle?
+  utter_goodbye:
+  - text: ¡Adiós!
+  utter_you_are_welcome:
+  - text: De nada.
+session_config:
+  session_expiration_time: 5
+  carry_over_slots_to_new_session: false

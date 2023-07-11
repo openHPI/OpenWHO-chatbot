@@ -1,0 +1,28 @@
+version: '3.1'
+
+nlu:
+  - intent: insults
+    examples: |
+        - lameculos
+        - pendejo
+        - culo
+        - coño
+        - patán
+        - teto
+        - tonto
+        - bobo
+        - huevonazo
+        - cabeza de chorlito
+        - Inocentón
+        - hijo de puta
+        - idiota
+        - cara de caca
+        - negro
+        - vago
+        - ganado
+        - saco de mierda
+        - bola de grasa
+        - imbécil
+        - mamapitos
+        - cerdo
+        - cachetón

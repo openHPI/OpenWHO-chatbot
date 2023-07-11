@@ -1,0 +1,216 @@
+version: '3.1'
+
+nlu:
+  - intent: goodbye
+    examples: |
+      - Bye bye
+      - Adiós
+      - adios
+      - ¿adios?
+      - adiós
+      - adios .
+      - adiós :P
+      - adiós bot
+      - bye bye
+      - adiós bot
+      - Adios por ahora
+      - adiós udo
+      - bye fue un placer hablar contigo
+      - bye
+      - byee
+      - Hasta luego.
+      - ciao
+      - cya
+      - adiós
+      - adiós
+      - ¡adiós rasa bot!
+      - buenas noches
+      - adios
+      - adios
+      - buenas noches
+      - tengo que irme
+      - k byyye #slay
+      - ok Bye
+      - ok bye
+      - ok, bye
+      - ok.bye
+      - hasta luego
+      - nos vemos
+      - Nos vemos.
+      - Nos vemos. Adiós.
+      - Cuidate
+      - entonces adiós
+      - tlak to you later
+      - toodle-oo
+      - Salir
+      - Cierra esta charla
+      - byr
+  - intent: greet
+    examples: |
+      - Bom dia
+      - Bonjour
+      - Buenos dias
+      - Buenos días
+      - Buen luto
+      - Guten Morgen
+      - HOLA
+      - HEY
+      - HEllo
+      - HI
+      - Hallo
+      - Hei
+      - Hellllooooooo
+      - Hola
+      - Hola
+      - Hola
+      - Hey bot
+      - Hola
+      - Hola
+      - Hola
+      - Hola bot
+      - Hola hombre
+      - Hola
+      - Hola
+      - Hola
+      - Hola
+      - Hola, bot
+      - Hieee
+      - Hieeeeeeeeeeeee
+      - Hola
+      - ¡¡¡¡Dije, helllllloooooO!!!!
+      - Bueno hola ;)
+      - ¿Qué tal?
+      - Que pasa
+      - Que pasa mi bot
+      - ¿que pasa?
+      - ayyyy que pasa
+      - bonjour
+      - ey jefe
+      - buenas tardes
+      - buenos días
+      - buenos días
+      - saludar
+      - saludos
+      - hai
+      - hallo
+      - halloo
+      - halloooo
+      - halo
+      - heeey
+      - heelio
+      - hell9o
+      - hellio
+      - hola
+      - hola a todos
+      - hola amigo
+      - hola hola
+      - hola hay alguien ahi
+      - hola soy yo otra vez
+      - hola robot
+      - hola allí
+      - hola mundo
+      - hola, me llamo [Charles Pfeffer](nombre)
+      - ¿hola?
+      - hola]
+      - hola
+      - hola
+      - helo
+      - hey
+      - hey bot
+      - hey bot
+      - hey amigo
+      - hey hey
+      - hey hablemos
+      - hey rasa
+      - hey sara
+      - hey ther
+      - hey there
+      - hola chico
+      - Hola...
+      - hey, hablemos
+      - heya
+      - heyho
+      - heyo
+      - hhola
+      - hola
+      - ¡Hola!
+      - Hola Señor
+      - Hola otra vez.
+      - Hola, ¿puedes hablar?
+      - Hola amigos
+      - Hola amigo
+      - Hola amigos
+      - hola hola
+      - hola soy [Sandra Hernandez](nombre)
+      - hola soy [Amanda Anderson](nombre)
+      - hola señora rasa
+      - hola amigo
+      - hola
+      - hola soy yo
+      - Hola
+      - hi.........................................................
+      - ¿hola?
+      - hieee
+      - hii
+      - hiihihi
+      - hiii
+      - hlo
+      - hola
+      - hola
+      - soy [Karen Mease](nombre)
+      - jojojo
+      - jop
+      - konichiwa
+      - merhaba
+      - rasa hola
+      - salut
+      - sup
+      - wasssup
+      - ¡wasssup!
+      - que pasa
+      - whats popping
+      - que pasa
+      - yo
+      - yoo
+      - ssup?
+      - helleo
+  - intent: thank
+    examples: |
+      - Genial. Gracias
+      - Genial, gracias
+      - Muchas gracias.
+      - Muchas gracias.
+      - ¡Gracias!
+      - Gracias
+      - Gracias bot
+      - Gracias
+      - ¡Gracias!
+      - increíble, gracias
+      - salud
+      - salud hermano
+      - Genial, gracias.
+      - cool gracias
+      - genial, gracias
+      - danke
+      - genial gracias
+      - ok gracias
+      - ok ¡gracias!
+      - perfecto gracias
+      - gracias
+      - Gracias.
+      - gracias de todas formas
+      - gracias
+      - muchas gracias por todo
+      - muchas gracias
+      - gracias por el enlace al foro, lo miraré
+      - gracias por la ayuda
+      - gracias es una gran noticia
+      - gracias
+      - gracias
+      - gracias
+      - gracias
+      - gracias
+      - sí gracias
+      - gracias por su información
+      - gracias
+      
