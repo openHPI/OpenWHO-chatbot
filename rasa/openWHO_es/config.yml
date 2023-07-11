@@ -33,4 +33,4 @@ importers:
 - name: MultiProjectImporter
 
 imports:
-  - ./GreetBot_en
+  - ./GreetBot
