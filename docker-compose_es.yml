@@ -15,4 +15,4 @@ services:
         - ./rasa/openWHO_es/actions:/app/actions
         - ./rasa/openWHO_es/data:/app/data
       ports:
-        - 10005:5055
+        - 10006:5055
