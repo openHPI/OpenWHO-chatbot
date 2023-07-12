@@ -4,4 +4,4 @@ WORKDIR /app
 
 USER root
 
-CMD ["start", "--actions", "actions", "--port", "5055"]
+CMD ["start", "--actions", "actions", "--port", "10005"]
