@@ -3,215 +3,214 @@ version: '3.1'
 nlu:
   - intent: faq/ask_about_moocs
     examples: |
-      - What are Massive Open Online Courses?
-      - Tell me about Massive Open Online Courses
-      - What are Moocs?
-      - What is a Mooc?
-      - What does Mooc mean?
-      - What does Mooc stand for?
-      - I do not understand what Mooc means
-      - Explain to me Moocs
-      - I want to know what Mooc means
-      - I want to know what a mooc is
-      - Can you tell me what a mooc is?
+        - ¿Qué son los cursos en línea masivos y abiertos?
+        - Cuéntenme sobre los cursos en línea masivos y abiertos.
+        - ¿Qué son los MOOC?
+        - ¿Qué es un MOOC?
+        - ¿Qué significa MOOC?
+        - ¿Qué significan las siglas MOOC?
+        - No entiendo qué quiere decir MOOC.
+        - Explíquenme lo que significa MOOC.
+        - Quiero saber qué significa MOOC.
+        - Quiero saber qué es un MOOC.
+        - ¿Puede decirme qué es un MOOC?
   - intent: faq/ask_payment
     examples: |
-      - Do I have to pay for openwho courses? 
-      - How much does openwho cost
-      - What is the price of openwho
-      - Do the courses cost money?
-      - Is openwho free?
-      - I don't want to pay money for the courses
+        - ¿Tengo que pagar por los cursos de OpenWHO? 
+        - ¿Cuánto cuesta OpenWHO?
+        - ¿Cuál es el precio de OpenWHO?
+        - ¿Los cursos cuestan dinero?
+        - ¿Es gratuito OpenWHO?
+        - No quiero pagar dinero por los cursos.
   - intent: faq/ask_account_creation
     examples: |
-      - How do I create a profile? 
-      - How do I create an account?
-      - Where do I register?
-      - I need a new account
-      - How can I start using openwho?
+        - ¿Cómo creo un perfil? 
+        - ¿Cómo creo una cuenta?
+        - ¿Dónde puedo inscribirme?
+        - Necesito una cuenta nueva.
+        - ¿Cómo puedo empezar a usar OpenWHO?
   - intent: faq/ask_confirmation_email
     examples: |
-      - What to do in case I did not receive a confirmation email? 
-      - I did not recieve the confirmation email
-      - I did not get the confirmation email
-      - I do not find the confirmation mail 
-      - I can not see the email for confirmation
-      - Where do I find the confirmation mail?
+        - ¿Qué hago si no recibo un correo electrónico de confirmación? 
+        - No he recibido el correo electrónico de confirmación.
+        - No me ha llegado el correo electrónico de confirmación.
+        - No encuentro el correo electrónico de confirmación. 
+        - No puedo ver el correo electrónico de confirmación.
+        - ¿Dónde puedo encontrar el correo electrónico de confirmación?
   - intent: faq/ask_mobile_device
     examples: |
-      - Will the platform work on mobile devices?
-      - Can I use openwho on my phone
-      - Can I use openwho on android
-      - Can I use openwho on IOS?
-      - Is there an openwho app? 
-      - How to use openwho on my mobile
-      - Does OpenWHO offer a mobile App? 
-      - Do you have a mobile App? 
-      - Do you offer an App? 
-      - Can I use OpenWHO on my phone? 
+        - ¿La plataforma funcionará en dispositivos móviles?
+        - ¿Puedo usar OpenWHO en mi teléfono?
+        - ¿Puedo usar OpenWHO en un dispositivo Android?
+        - ¿Puedo utilizar OpenWHO en un dispositivo IOS?
+        - ¿Existe una aplicación de OpenWHO? 
+        - ¿Cómo usar OpenWHO en mi móvil?
+        - ¿OpenWHO ofrece una aplicación móvil? 
+        - ¿Tienen una aplicación móvil? 
+        - ¿Ofrecen una aplicación? 
+        - ¿Puedo usar OpenWHO en mi teléfono? 
   - intent: faq/ask_password_reset
     examples: |
-      - I forgot my password, what can I do? 
-      - I lost my password
-      - I forgot my password
-      - How can I retrieve my password
-      - I need to reset my password
-      - Where can I reset my password
-      - Where can I retrieve my password
+        - He olvidado mi contraseña, ¿qué puedo hacer? 
+        - He perdido mi contraseña.
+        - He olvidado mi contraseña.
+        - ¿Cómo puedo recuperar mi contraseña?
+        - Necesito restablecer mi contraseña.
+        - ¿Dónde puedo restablecer mi contraseña?
+        - ¿Dónde puedo recuperar mi contraseña?
   - intent: faq/ask_who_credentials
     examples: |
-      - Can I use my who credentials to log in the platform? 
-      - Can I use my who account for openwho? 
-      - Do I need a new account for openwho or can I use my who account? 
-      - Can I use my who credentials
+        - ¿Puedo usar mis credenciales de la OMS para acceder a la plataforma? 
+        - ¿Puedo usar mi cuenta de la OMS para OpenWHO? 
+        - ¿Necesito una cuenta nueva para OpenWHO o puedo usar mi cuenta de la OMS? 
+        - ¿Puedo usar mis credenciales de la OMS?
   - intent: faq/ask_whats_openwho
     examples: |
-      - What is OpenWHO?
-      - Please explain openwho.
-      - What exactly is openwho? 
-      - What is this website? 
-      - What can I do here? 
-      - What is the purpose of OpenWHO? 
+        - ¿Qué es OpenWHO?
+        - Por favor, explíquenme qué es OpenWHO.
+        - ¿Qué es exactamente OpenWHO? 
+        - ¿Qué es este sitio web? 
+        - ¿Qué puedo hacer aquí? 
+        - ¿Cuál es el objetivo de OpenWHO? 
   - intent: faq/ask_access_openwho
     examples: |
-      - Who can access OpenWHO courses?
-      - Are there access restrictions for OpenWHO courses?
-      - Who is allowed to join OpenWHO? 
-      - Can anyone use OpenWHO? 
-      - Can everybody join OpenWHO? 
-      - Can anybody use OpenWHO? 
-      - Can everybody use OpenWHO? 
-      - Can anyone join OpenWHO? 
+        - ¿Quién puede acceder a los cursos de OpenWHO?
+        - ¿Existen restricciones de acceso a los cursos de OpenWHO?
+        - ¿Quién puede sumarse a OpenWHO? 
+        - ¿Cualquiera puede usar OpenWHO? 
+        - ¿Cualquier persona puede unirse a OpenWHO? 
+        - ¿Todos pueden acceder a OpenWHO? 
+        - ¿Cualquier persona puede usar OpenWHO? 
+        - ¿Cualquiera puede unirse a OpenWHO? 
   - intent: faq/ask_course_types
     examples: |
-      - What type of courses does OpenWHO offer?
-      - What are the different course types? 
-      - What does OpenWHO offer? 
-      - Are there different course levels? 
-      - Are all courses the same? 
-      - What are the right courses for me? 
-      - What are course differences? 
+        - ¿Qué tipo de cursos ofrece OpenWHO?
+        - ¿Cuáles son los distintos tipos de cursos? 
+        - ¿Qué ofrece OpenWHO? 
+        - ¿Hay diferentes niveles de cursos? 
+        - ¿Son todos los cursos iguales? 
+        - ¿Cuáles son los cursos adecuados para mí? 
+        - ¿Cuáles son las diferencias entre los cursos? 
   - intent: faq/ask_course_structure
     examples: |
-      - How are courses structured?
-      - What materials are used in a course?
-      - What does a course contain? 
-      - How does a course work? 
-      - What can I expect from a course? 
+        - ¿Cómo se estructuran los cursos?
+        - ¿Qué materiales se usan en un curso?
+        - ¿Cuál es el contenido de un curso? 
+        - ¿Cómo funciona un curso? 
+        - ¿Qué puedo esperar de un curso? 
   - intent: faq/ask_ongoing_outbreak
     examples: |
-      - How does OpenWHO support ongoing outbreaks?
-      - What does OpenWHO do for current outbrekas?
-      - How does OpenWHO help with outbreaks? 
+        - ¿Cómo apoya OpenWHO a los brotes en curso?
+        - ¿Qué hace OpenWHO por los brotes actuales?
+        - ¿Cómo ayuda OpenWHO durante los brotes? 
   - intent: faq/ask_offered_languages
     examples: |
-      - What languages does OpenWHO offer? 
-      - In what languages can I use OpenWHO? 
-      - What languages are used? 
-      - What languages do you offer? 
-      - In what languages are the courses translated? 
+        - ¿Qué idiomas ofrece OpenWHO? 
+        - ¿En qué idiomas puedo usar OpenWHO? 
+        - ¿Qué idiomas se usan? 
+        - ¿Qué idiomas ofrecen? 
+        - ¿A qué idiomas se traducen los cursos? 
   - intent: faq/ask_course_enrollment
     examples: |
-      - I cannot enter the course [COVID-19](course_name)
-      - I want to enroll for the course [COVID-19](course_name)
-      - I want to join the course
-      - I want to particiapte in the course
-      - How can I start the course [COVID-19](course_name)?
-      - How can I enter the course?
-      - How can I get to the course?
-      - How do I get the course?
-      - How can I enroll to the course [COVID-19](course_name)?
-      - How do I enroll in a course?
-      - How to join a course?
-      - Where can I join a course?
-      - How to participate in a course?
-      - Where to enroll in a course?
+        - No puedo entrar al curso [COVID-19](nombre_curso).
+        - Quiero inscribirme en el curso [COVID-19](nombre_curso).
+        - Quiero unirme al curso.
+        - Quiero participar en el curso.
+        - ¿Cómo puedo iniciar el curso [COVID-19](nombre_curso)?
+        - ¿Cómo puedo acceder al curso?
+        - ¿Cómo puedo adquirir el curso?
+        - ¿Cómo puedo obtener el curso?
+        - ¿Cómo puedo inscribirme en el curso [COVID-19](nombre_curso)?
+        - ¿Cómo me inscribo en un curso?
+        - ¿Cómo me uno a un curso?
+        - ¿Dónde puedo inscribirme en un curso?
+        - ¿Cómo se participa en un curso?
+        - ¿Dónde me inscribo en un curso?
   - intent: faq/ask_find_certificate
     examples: |
-      - Where can I find my certificate for the course [COVID-19](course_name)?
-      - How can I download a [confirmation of participation](certificate_type)?
-      - How can I download the certificate?
-      - Where do I get a [confirmation of participation](certificate_type)?
-      - Where can I download a [confirmation of participation](certificate_type)? 
-      - Where do I get the certficiate?
-      - Do all courses offer [confirmation of participation](certificate_type)? 
-      - Do I get a certificate? 
-      - Can I get a certificate?
-      - Please give me a confirmation
-      - I need a certificate
-      - I want a confirmation
+        - ¿Dónde encuentro mi certificado del curso [COVID-19](nombre_curso)?
+        - ¿Cómo descargo una [confirmación de participación](tipo_certificado)?
+        - ¿Cómo descargo el certificado?
+        - ¿En dónde obtengo una [confirmación de participación](tipo_certificado)?
+        - ¿De dónde descargo una [confirmación de participación](tipo_certificado)? 
+        - ¿Dónde obtengo el certificado?
+        - ¿Todos los cursos ofrecen [confirmación de participación](tipo_certificado)? 
+        - ¿Recibo un certificado? 
+        - ¿Puedo obtener un certificado?
+        - Por favor, denme una confirmación.
+        - Necesito un certificado.
+        - Quiero una confirmación.
   - intent: faq/ask_outdated_browser
     examples: |
-      - The video is not playing
-      - How can I start the video?
-      - My course video is not loading
-      - The video is not starting
-      - How can I see the course video?
-      - Why is the course video not playing?
+        - El vídeo no se reproduce.
+        - ¿Cómo puedo iniciar el vídeo?
+        - El vídeo de mi curso no se carga.
+        - El vídeo no se inicia.
+        - ¿Cómo puedo ver el vídeo del curso?
+        - ¿Por qué no se reproduce el vídeo del curso?
   - intent: faq/ask_change_birthday
     examples: |
-      - How can I change my birthday?
-      - Where can I set my birthday?
-      - Where can I add my birthday?
-      - Is my birthday shown on my certficate?
-      - I want to change my birthday
-      - I cannot set my birthday
-      - I cannot find my birthday on the certificate
+        - ¿Cómo modifico mi fecha de nacimiento?
+        - ¿Dónde fijo mi fecha de nacimiento?
+        - ¿Dónde añado mi fecha de nacimiento?
+        - ¿Aparece mi fecha de nacimiento en el certificado?
+        - Quiero cambiar mi fecha de nacimiento.
+        - No me es posible fijar mi fecha de nacimiento.
+        - No encuentro mi fecha de nacimiento en el certificado.
   - intent: faq/ask_transcription
     examples: |
-      - Are there any transcriptions available?
-      - Can I download a transcription for the video?
-      - I need a transcription
-      - I want a transcription
-      - Where can I find the transcription for the video?
-      - Where can I download the transcription?
+        - ¿Hay transcripciones disponibles?
+        - ¿Puedo descargar una transcripción del vídeo?
+        - Necesito una transcripción.
+        - Quiero una transcripción.
+        - ¿Dónde puedo encontrar la transcripción del vídeo?
+        - ¿Dónde puedo descargar la transcripción?
   - intent: faq/ask_course_timelimit
     examples: |
-      - Do these courses have any time limit? 
-      - How long can I do the courses? 
-      - When should I finish my courses?
-      - Do the courses end sometime?
-      - When does the course start?
-      - When does the course end?
-      - What is the enddate of my course?
-      - What is the startdate of my course?
-      - How much time do I have to finish this course?
+        - ¿Estos cursos tienen algún límite de tiempo? 
+        - ¿Cuánto tiempo puedo hacer los cursos? 
+        - ¿Cuándo debo terminar mis cursos?
+        - ¿Los cursos tienen fin?
+        - ¿Cuándo empieza el curso?
+        - ¿Cuándo termina el curso?
+        - ¿Cuál es la fecha de finalización de mi curso?
+        - ¿Cuál es la fecha de inicio de mi curso?
+        - ¿De cuánto tiempo dispongo para terminar este curso?
   - intent: faq/ask_covid19_help
     examples: |
-      - I want to help 
-      - How do I help?
-      - Do I have [COVID-19](virus)?
-      - How can I test for [COVID-19](virus)?
-      - I want to get tested for [Corona](virus)?
-      - Is there a vaccine yet?
-      - Where can I get tested?
-      - Where can I get vaccinated?
+        - Quiero ayudar. 
+        - ¿Cómo puedo ayudar?
+        - ¿Tengo [COVID-19](virus)?
+        - ¿Cómo puedo hacer la prueba de [COVID-19](virus)?
+        - ¿Quiero hacerme la prueba de [Corona](virus)?
+        - ¿Existe ya una vacuna?
+        - ¿Dónde puedo hacerme una prueba?
+        - ¿Dónde puedo vacunarme?
   - intent: faq/ask_change_info
     examples: |
-      - I want to change my [picture](profile-info)
-      - I want to change my [name](profile-info)
-      - I want to change my [name](profile-info) on the certificate
-      - Correct my [name](profile-info) on the certificate
-      - How do i change my [name](profile-info)?
-      - I misspelled my [name](profile-info)
-      - [Name](profile-info) issue
-      - I want Dr in my [name](profile-info)
-      - How to correct [name](profile-info)?
-      - I want to correct my [name](profile-info)
-      - I want to correct my [picture](profile-info)
-      - How can I change my [email](profile-info)?
-      - Where can i change my [email address](profile-info)?
-      - I want to change [e-mail](profile-info)
-      - I want to use a different [mail](profile-info)
-      - How can I use a different [mail](profile-info)?
-      - Where can I set my [email address](profile-info)?
-
+        - Quiero cambiar mi [foto](info-perfil).
+        - Quiero cambiar mi [nombre](info-perfil).
+        - Quiero cambiar mi [nombre](info-perfil) en el certificado
+        - Corregir mi [nombre](info-perfil) en el certificado.
+        - ¿Cómo puedo cambiar mi [nombre](info-perfil)?
+        - He escrito mal mi [nombre](info-perfil).
+        - Asunto [nombre](info-perfil).
+        - Quiero que figure Dr. en mi [nombre](info-perfil).
+        - ¿Cómo corregir [nombre](info-perfil)?
+        - Quiero corregir mi [nombre](info-perfil).
+        - Quiero corregir mi [foto](info-perfil).
+        - ¿Cómo puedo cambiar mi [email](info-perfil)?
+        - ¿Dónde puedo cambiar mi [email](información de perfil)?
+        - Quiero cambiar [email](info-perfil).
+        - Quiero usar un [email](info-perfil) diferente.
+        - ¿Cómo puedo usar un [email](profile-info) diferente?
+        - ¿Dónde puedo configurar mi [emal](info-perfil)?
   - synonym: COVID-19
     examples: |
-      - covid
-      - Corona
-      - Covid-19
-      - rona
-      - coronavirus
-      - corona
-      - Covid
+        - covid
+        - Corona
+        - Covid-19
+        - rona
+        - coronavirus
+        - corona
+        - Covid

@@ -210,7 +210,7 @@ nlu:
       - Can you please send me an uber
       - I want to order food
       - What is 2 + 2?
-      - Who's the [US(country)] President?
+      - Who's the [US](country) President?
       - How can I move to the [US](country)?
       - What's the capital of [Germany](country)?
 
