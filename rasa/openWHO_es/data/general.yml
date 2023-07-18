@@ -204,8 +204,8 @@ nlu:
         - ¿Puedes enviarme un Uber, por favor
         - Quiero pedir comida
         - ¿Cuánto es 2 + 2?
-        - ¿Quién es el presidente de [EE. UU.](país)?
-        - ¿Cómo puedo mudarme a [EE. UU.](país)?
+        - ¿Quién es el presidente de [España](país)?
+        - ¿Cómo puedo mudarme a [Venezuela](país)?
         - ¿Cuál es la capital de [Alemania](país)?
   - intent: bot_challenge
     examples: |
