@@ -15,8 +15,19 @@ intents:
 - add_info_profile
 - reset_password
 - mobile_apps
+- greet
+- goodbye
+- thank
 
 responses:
+  utter_anything_else:
+  - text: 还有什么需要我帮忙的吗？
+  utter_greet:
+  - text: 您好！欢迎来到 OpenWHO 支持聊天室。有什么可以帮您？
+  utter_goodbye:
+  - text: 再见
+  utter_you_are_welcome:
+  - text: 不客气。
   utter_video_not_playing:
   - text: "因为我们的视频供应商vimeo不能在中国使用，所以您看不了视频。但是， 您可以下载视频下的课程字幕。"
   utter_download_certificate:

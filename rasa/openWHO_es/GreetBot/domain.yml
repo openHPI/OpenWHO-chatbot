@@ -8,7 +8,7 @@ responses:
   utter_anything_else:
   - text: ¿Puedo ayudarle en algo más?
   utter_greet:
-  - text: ¡Hola! ¿En qué puedo ayudarle?
+  - text: ¡Hola! Bienvenido al chat de asistencia de OpenWHO. ¿En qué puedo ayudarle?
   utter_goodbye:
   - text: ¡Adiós!
   utter_you_are_welcome:
